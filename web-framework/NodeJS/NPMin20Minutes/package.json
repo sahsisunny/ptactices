@@ -1,0 +1,19 @@
+{
+  "name": "npmin20minutes",
+  "version": "1.0.0",
+  "description": "for learn NPM in 20 minutes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NPM",
+    "NodeJS"
+  ],
+  "author": "Sunny Sahsi",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "validator": "^13.7.0"
+  }
+}

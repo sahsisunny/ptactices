@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Box and Text Shadow </title>
+     <style>
+          body{
+               background-color: rgb(78, 198, 45);
+
+          }
+          .container {
+               display: flex;
+          }
+
+          .card {
+               padding: 23px 12px;
+               /* border: 2px solid red; */
+               margin: 23px 12px;
+               background-color: bisque;
+
+               /* For bottom and right */
+               /* box-shadow: 8px 9px green; */
+
+               /* For top and left */
+               /* box-shadow: -8px -9px green; */
+
+               /* Blur Radius */
+               /* box-shadow: 8px 9px 10px green; */
+
+          }
+          #card-1{
+               box-shadow: 8px 9px 10px white;
+
+          }
+          .card h2{
+               /* text-shadow: 2px 2px 2px  white; */
+               /* text-shadow: 2px 2px 2px grey; */
+               text-shadow: 2px 2px 2px red;
+          }
+          #card-2{
+               box-shadow: 8px 9px 10px  grey;
+
+          }
+          #card-3{
+               box-shadow: 8px 9px 10px red;
+
+          }
+     </style>
+</head>
+
+<body>
+     <div class="container">
+          <div class="card" id="card-1">
+               <h2>White Hat Hacker</h2>
+               <p>White hat hackers are the good guys. They are the ones who find security vulnerabilities in a system and report them to the company or organization that owns the system. They are also known as ethical hackers.</p>
+          </div>
+          <div class="card" id="card-2">
+               <h2>Black Hat Hacker</h2>
+               <p>Black hat hackers are the bad guys. They are the ones who find security vulnerabilities in a system and exploit them for their own gain. They are also known as crackers.</p>
+
+          </div>
+          <div class="card" id="card-3">
+               <h2>Grey Hat Hacker</h2>
+               <p>Grey hat hackers are the ones who find security vulnerabilities in a system and exploit them for their own gain. They are also known as crackers.They are also known as crackers.</p>
+
+          </div>
+     </div>
+</body>
+
+</html>

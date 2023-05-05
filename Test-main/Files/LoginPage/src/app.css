@@ -1,0 +1,84 @@
+:root {
+     --theme-blue: #1d1283;
+     --theme-pink: #e30464;
+}
+
+.card {
+     border: 2px solid black;
+     color: var(--theme-blue);
+     border-radius: 10px;
+     padding: 1.5rem;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     flex-wrap: wrap;
+     margin: 2rem;
+     align-items: center;
+     text-decoration: none;
+     transition: all 0.38s ease-out;
+     width: 12rem;
+     position: relative;
+}
+
+.card:hover {
+     color: var(--theme-pink);
+     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+img {
+     border-radius: 50%;
+}
+
+.name {
+     font-size: 1rem;
+     font-weight: 700;
+     width: 100%;
+     text-align: center;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+}
+
+.infoIcon {
+     position: absolute;
+     top: 2%;
+     right: 2%;
+     font-size: 1.2rem;
+     font-weight: 700;
+     color: var(--theme-blue);
+     cursor: pointer;
+}
+
+
+.infoMessage {
+     visibility: hidden;
+     background-color: var(--theme-blue);
+     width: 200px;
+     font-size: 0.9rem;
+     color: #fff;
+     text-align: center;
+     padding: 5px;
+     border-radius: 6px;
+     transition: opacity 0.3s ease, visibility 0.3s ease;
+     position: absolute;
+     top: 0%;
+     left: 0%;
+     z-index: 1;
+}
+
+.infoMessage::after {
+     content: "";
+     position: absolute;
+     top: 10px;
+     left: 100%;
+     border-width: 5px;
+     border-style: solid;
+     border-color: var(--theme-blue) transparent transparent transparent;
+     rotate: 270deg;
+}
+
+
+.infoMessage {
+     opacity: 1;
+     visibility: visible;
+}

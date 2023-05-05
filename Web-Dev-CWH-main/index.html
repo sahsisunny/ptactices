@@ -1,0 +1,2967 @@
+<h1 id="php">PHP</h1>
+<h1 id="introduction-to-php">Introduction to PHP</h1>
+<h4 id="what-is-php-">What is PHP?</h4>
+<ul>
+     <li>PHP is a recursive acronym for &quot;PHP: Hypertext Preprocessor&quot;. It is a server side scripting language
+          to make dynamic and interactive web pages.</li>
+     <li>PHP is a open source language</li>
+     <li>PHP is a easy to learn and runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)</li>
+     <li>PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft&#39;s ASP</li>
+     <li>PHP is a server-side scripting language designed for web development but also used as a general-purpose
+          programming language.</li>
+</ul>
+<h4 id="what-can-php-do-">What can PHP do?</h4>
+<ul>
+     <li>PHP can generate dynamic page content</li>
+     <li>PHP can create, open, read, write, delete, and close files on the server</li>
+     <li>PHP can collect form data</li>
+     <li>PHP can send and receive cookies</li>
+     <li>PHP can add, delete, modify data in your database</li>
+     <li>PHP can be used to control user-access</li>
+     <li>PHP can encrypt data</li>
+     <li>PHP can be used to include files</li>
+     <li>PHP can be used to validate form data</li>
+     <li>PHP can be used to filter data</li>
+     <li>PHP can be used to send and receive emails</li>
+</ul>
+<h4 id="what-is-a-php-file-">What is a PHP File?</h4>
+<ul>
+     <li>A PHP file can contain text, HTML, CSS, JavaScript, and PHP code</li>
+     <li>PHP code are executed on the server, and the result is returned to the browser as plain HTML</li>
+     <li>PHP files have extension &quot;.php&quot;</li>
+</ul>
+<h4 id="php-syntax">PHP Syntax</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-comment">// PHP code goes here</span>
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="statement-terminator">Statement terminator</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Hello World"</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="line-breaks">Line breaks</h4>
+<ul>
+     <li>PHP ignores line breaks</li>
+     <li>PHP ignores white spaces</li>
+     <li>PHP ignores tabs</li>
+</ul>
+<h5 id="way-to-break-a-line-in-output">Way to break a line in output</h5>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Hello World&lt;br&gt;"</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h5 id="comments">Comments</h5>
+<ul>
+     <li>Single line comments</li>
+     <li>Multi line comments</li>
+     <li>Doc comments</li>
+</ul>
+<h6 id="example">Example</h6>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-comment">// This is a single line comment</span>
+
+<span class="hljs-comment"># This is also a single line comment</span>
+
+<span class="hljs-comment">/* This is a multi line comment
+   This is the second line of the comment
+   This is the third line of the comment */</span>
+
+<span class="hljs-comment">/**
+ * This is a doc comment
+ */</span>
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="output-in-php">Output in PHP</h4>
+<ul>
+     <li>echo</li>
+     <li>print<h5 id="echo">echo</h5>
+     </li>
+     <li>echo is a language construct, not a function</li>
+     <li>echo can take multiple parameters</li>
+     <li>echo has no return value</li>
+     <li>echo is marginally faster than print</li>
+</ul>
+<h6 id="echo-example">echo example</h6>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Hello World"</span>;
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Hello World"</span>, <span class="hljs-string">"Hello World"</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h5 id="print">print</h5>
+<ul>
+     <li>print is a function, not a language construct</li>
+     <li>print can take one argument</li>
+     <li>print has a return value of 1 so it can be used in expressions</li>
+     <li>print is slower than echo</li>
+</ul>
+<h5 id="print-example">print example</h5>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"Hello World"</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="data-types">Data types</h1>
+<ul>
+     <li>String</li>
+     <li>Integer</li>
+     <li>Float</li>
+     <li>Boolean</li>
+     <li>Array</li>
+     <li>Object</li>
+     <li>NULL</li>
+     <li>Resource</li>
+</ul>
+<h4 id="string">String</h4>
+<ul>
+     <li>A string is a sequence of characters, like &quot;Hello world!&quot;</li>
+     <li>A string can be any text inside quotes</li>
+     <li>You can use single or double quotes for strings</li>
+</ul>
+<h4 id="string-example">String example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $x = <span class="hljs-string">"Hello world!"</span>;
+    $y = <span class="hljs-string">'Hello world!'</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="integer">Integer</h4>
+<ul>
+     <li>An integer is a number without a decimal point, like 4195</li>
+     <li>Integers can be specified in: decimal (base 10), hexadecimal (base 16), octal (base 8), or binary (base 2)
+          notation</li>
+</ul>
+<h4 id="integer-example">Integer example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $x = <span class="hljs-number">5985</span>;
+    var_dump($x);
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;
+    $x = <span class="hljs-number">-345</span>; <span class="hljs-comment">// negative number</span>
+    var_dump($x);
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;
+    $x = <span class="hljs-number">0x8C</span>; <span class="hljs-comment">// hexadecimal number</span>
+    var_dump($x);
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;
+    $x = <span class="hljs-number">047</span>; <span class="hljs-comment">// octal number</span>
+    var_dump($x);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="float">Float</h4>
+<ul>
+     <li>A float (floating point number) is a number with a decimal point or a number in exponential form</li>
+     <li>Floats can also be specified in scientific notation (for example: 2.0e3 or 7E-10)</li>
+</ul>
+<h4 id="float-example">Float example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $x = <span class="hljs-number">10.365</span>;
+    var_dump($x);
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;
+    $x = <span class="hljs-number">2.4e3</span>;
+    var_dump($x);
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;
+    $x = <span class="hljs-number">8E-5</span>;
+    var_dump($x);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="boolean">Boolean</h4>
+<ul>
+     <li>A Boolean represents two possible states: TRUE or FALSE</li>
+</ul>
+<h4 id="boolean-example">Boolean example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $x = <span class="hljs-keyword">true</span>;
+    $y = <span class="hljs-keyword">false</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="array">Array</h4>
+<ul>
+     <li>An array stores multiple values in one single variable</li>
+     <li>An array is a special variable, which can hold more than one value at a time</li>
+     <li>An array can hold many values under a single name, and you can access the values by referring to an index
+          number</li>
+</ul>
+<h4 id="array-example">Array example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $cars = <span class="hljs-keyword">array</span>(<span class="hljs-string">"Volvo"</span>, <span class="hljs-string">"BMW"</span>, <span class="hljs-string">"Toyota"</span>);
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"I like "</span> . $cars[<span class="hljs-number">0</span>] . <span class="hljs-string">", "</span> . $cars[<span class="hljs-number">1</span>] . <span class="hljs-string">" and "</span> . $cars[<span class="hljs-number">2</span>] . <span class="hljs-string">"."</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="object">Object</h4>
+<ul>
+     <li>An object is a data type which stores data and information on how to process that data</li>
+     <li>An object is a combination of variables and functions</li>
+     <li>An object is like a variable, but it can also have functions</li>
+     <li>Objects are created from classes, and they are the most important aspect of object-oriented programming</li>
+</ul>
+<h4 id="object-example">Object example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Car</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">$this</span>-&gt;model = <span class="hljs-string">"VW"</span>;
+        }
+    }
+    <span class="hljs-comment">// create an object</span>
+    $herbie = <span class="hljs-keyword">new</span> Car();
+    <span class="hljs-comment">// show object properties</span>
+    <span class="hljs-keyword">echo</span> $herbie-&gt;model;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="null">NULL</h4>
+<ul>
+     <li>NULL is a special data type which can have only one value: NULL</li>
+     <li>A variable of data type NULL is a variable that has no value assigned to it</li>
+     <li>NULL is the only possible value of type NULL</li>
+     <li>NULL is case-sensitive</li>
+</ul>
+<h4 id="null-example">NULL example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $x = <span class="hljs-string">"Hello world!"</span>;
+    $x = <span class="hljs-keyword">null</span>;
+    var_dump($x);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="resource">Resource</h4>
+<ul>
+     <li>A resource is a special variable, holding a reference to an external resource</li>
+     <li>A resource is created and used by a special function</li>
+</ul>
+<h4 id="resource-example">Resource example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $file = fopen(<span class="hljs-string">"welcome.txt"</span>, <span class="hljs-string">"r"</span>);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="variables">Variables</h1>
+<ul>
+     <li>Local variables</li>
+     <li>Global variables</li>
+     <li>Static variables</li>
+</ul>
+<h4 id="local-variables">Local variables</h4>
+<ul>
+     <li>Local variables are the variables that are declared inside a function</li>
+     <li>Local variables are only accessible within the function</li>
+     <li>Local variables are destroyed when the function ends</li>
+</ul>
+<h4 id="local-variables-example">Local variables example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunction</span><span class="hljs-params">()</span> </span>{
+        $x = <span class="hljs-number">5</span>; <span class="hljs-comment">// local scope</span>
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;p&gt;Variable x inside function is: $x&lt;/p&gt;"</span>;
+    }
+    myFunction();
+    <span class="hljs-comment">// using x outside the function will generate an error</span>
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;p&gt;Variable x outside function is: $x&lt;/p&gt;"</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="global-variables">Global variables</h4>
+<ul>
+     <li>Global variables are declared outside a function</li>
+     <li>Global variables are accessible inside a function</li>
+     <li>Global variables are accessible from anywhere in the script</li>
+</ul>
+<h4 id="global-variables-example">Global variables example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $x = <span class="hljs-number">5</span>; <span class="hljs-comment">// global scope</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunction</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// using x inside this function will generate an error</span>
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;p&gt;Variable x inside function is: $x&lt;/p&gt;"</span>;
+    }
+    myFunction();
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;p&gt;Variable x outside function is: $x&lt;/p&gt;"</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="static-variables">Static variables</h4>
+<ul>
+     <li>Static variables are declared inside a function</li>
+     <li>Static variables are only accessible within the function</li>
+     <li>Static variables are not destroyed when the function ends</li>
+</ul>
+<h4 id="static-variables-example">Static variables example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunction</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">static</span> $x = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">echo</span> $x;
+        $x++;
+    }
+    myFunction();
+    myFunction();
+    myFunction();
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="constants">Constants</h1>
+<ul>
+     <li>Predefined constants</li>
+     <li>User-defined constants</li>
+</ul>
+<h4 id="predefined-constants">Predefined constants</h4>
+<ul>
+     <li>Predefined constants are constants that are built into PHP</li>
+     <li>Predefined constants are automatically defined by PHP</li>
+     <li>Predefined constants are always available in all scopes</li>
+</ul>
+<h4 id="predefined-constants-example">Predefined constants example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-keyword">echo</span> PHP_VERSION;
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;
+    <span class="hljs-keyword">echo</span> PHP_OS;
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;
+    <span class="hljs-keyword">echo</span> <span class="hljs-keyword">__LINE__</span>;
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;
+    <span class="hljs-keyword">echo</span> <span class="hljs-keyword">__FILE__</span>;
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;
+    <span class="hljs-keyword">echo</span> <span class="hljs-keyword">__DIR__</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="user-defined-constants">User-defined constants</h4>
+<ul>
+     <li>User-defined constants are constants that you yourself create</li>
+     <li>User-defined constants are created with the define() function</li>
+     <li>User-defined constants are always global</li>
+</ul>
+<h4 id="user-defined-constants-example">User-defined constants example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    define(<span class="hljs-string">"GREETING"</span>, <span class="hljs-string">"Welcome to W3Schools.com!"</span>);
+    <span class="hljs-keyword">echo</span> GREETING;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="operators">Operators</h1>
+<ul>
+     <li>Arithmetic operators</li>
+     <li>Assignment operators</li>
+     <li>Comparison operators</li>
+     <li>Increment/Decrement operators</li>
+     <li>Logical operators</li>
+     <li>String operators</li>
+     <li>Array operators</li>
+     <li>Conditional assignment operators</li>
+</ul>
+<h4 id="arithmetic-operators">Arithmetic operators</h4>
+<ul>
+     <li>Arithmetic operators are used with numeric values to perform common mathematical operations, such as addition,
+          subtraction, multiplication etc.</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Operator</th>
+               <th>Name</th>
+               <th>Example</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>+</td>
+               <td>Addition</td>
+               <td><code>$x + $y</code></td>
+          </tr>
+          <tr>
+               <td>-</td>
+               <td>Subtraction</td>
+               <td><code>$x - $y</code></td>
+          </tr>
+          <tr>
+               <td>*</td>
+               <td>Multiplication</td>
+               <td><code>$x * $y</code></td>
+          </tr>
+          <tr>
+               <td>/</td>
+               <td>Division</td>
+               <td><code>$x / $y</code></td>
+          </tr>
+          <tr>
+               <td>%</td>
+               <td>Modulus</td>
+               <td><code>$x % $y</code></td>
+          </tr>
+          <tr>
+               <td>**</td>
+               <td>Exponentiation</td>
+               <td><code>$x ** $y</code></td>
+          </tr>
+     </tbody>
+</table>
+<h4 id="assignment-operators">Assignment operators</h4>
+<ul>
+     <li>Assignment operators are used with numeric values to write a value to a variable</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Operator</th>
+               <th>Name</th>
+               <th>Example</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>=</td>
+               <td>Simple assignment</td>
+               <td><code>$x = $y</code></td>
+          </tr>
+          <tr>
+               <td>+=</td>
+               <td>Addition assignment</td>
+               <td><code>$x += $y</code></td>
+          </tr>
+          <tr>
+               <td>-=</td>
+               <td>Subtraction assignment</td>
+               <td><code>$x -= $y</code></td>
+          </tr>
+          <tr>
+               <td>*=</td>
+               <td>Multiplication assignment</td>
+               <td><code>$x *= $y</code></td>
+          </tr>
+          <tr>
+               <td>/=</td>
+               <td>Division assignment</td>
+               <td><code>$x /= $y</code></td>
+          </tr>
+          <tr>
+               <td>%=</td>
+               <td>Modulus assignment</td>
+               <td><code>$x %= $y</code></td>
+          </tr>
+          <tr>
+               <td>.=</td>
+               <td>Concatenation assignment</td>
+               <td><code>$x .= $y</code></td>
+          </tr>
+     </tbody>
+</table>
+<h4 id="comparison-operators">Comparison operators</h4>
+<ul>
+     <li>Comparison operators are used to compare two values (number or string)</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Operator</th>
+               <th>Name</th>
+               <th>Example</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>==</td>
+               <td>Equal</td>
+               <td><code>$x == $y</code></td>
+          </tr>
+          <tr>
+               <td>===</td>
+               <td>Identical</td>
+               <td><code>$x === $y</code></td>
+          </tr>
+          <tr>
+               <td>!=</td>
+               <td>Not equal</td>
+               <td><code>$x != $y</code></td>
+          </tr>
+          <tr>
+               <td>&lt;&gt;</td>
+               <td>Not equal</td>
+               <td><code>$x &lt;&gt; $y</code></td>
+          </tr>
+          <tr>
+               <td>!==</td>
+               <td>Not identical</td>
+               <td><code>$x !== $y</code></td>
+          </tr>
+          <tr>
+               <td>&gt;</td>
+               <td>Greater than</td>
+               <td><code>$x &gt; $y</code></td>
+          </tr>
+          <tr>
+               <td>&lt;</td>
+               <td>Less than</td>
+               <td><code>$x &lt; $y</code></td>
+          </tr>
+          <tr>
+               <td>&gt;=</td>
+               <td>Greater than or equal to</td>
+               <td><code>$x &gt;= $y</code></td>
+          </tr>
+          <tr>
+               <td>&lt;=</td>
+               <td>Less than or equal to</td>
+               <td><code>$x &lt;= $y</code></td>
+          </tr>
+          <tr>
+               <td>&lt;=&gt;</td>
+               <td>Spaceship</td>
+               <td><code>$x &lt;=&gt; $y</code></td>
+          </tr>
+     </tbody>
+</table>
+<h4 id="increment-decrement-operators">Increment/Decrement operators</h4>
+<ul>
+     <li>Increment operators increase a variable&#39;s value by one</li>
+     <li>Decrement operators decrease a variable&#39;s value by one</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Operator</th>
+               <th>Name</th>
+               <th>Example</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>++</td>
+               <td>Pre-increment</td>
+               <td><code>++$x</code></td>
+          </tr>
+          <tr>
+               <td>++</td>
+               <td>Post-increment</td>
+               <td><code>$x++</code></td>
+          </tr>
+          <tr>
+               <td>--</td>
+               <td>Pre-decrement</td>
+               <td><code>--$x</code></td>
+          </tr>
+          <tr>
+               <td>--</td>
+               <td>Post-decrement</td>
+               <td><code>$x--</code></td>
+          </tr>
+     </tbody>
+</table>
+<h4 id="logical-operators">Logical operators</h4>
+<ul>
+     <li>Logical operators are used to combine conditional statements</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Operator</th>
+               <th>Name</th>
+               <th>Example</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>and</td>
+               <td>And</td>
+               <td><code>$x and $y</code></td>
+          </tr>
+          <tr>
+               <td>or</td>
+               <td>Or</td>
+               <td><code>$x or $y</code></td>
+          </tr>
+          <tr>
+               <td>xor</td>
+               <td>Xor</td>
+               <td><code>$x xor $y</code></td>
+          </tr>
+          <tr>
+               <td>&amp;&amp;</td>
+               <td>And</td>
+               <td><code>$x &amp;&amp; $y</code></td>
+          </tr>
+          <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td>Or</td>
+               <td>`$x</td>
+               <td></td>
+               <td>$y`</td>
+          </tr>
+          <tr>
+               <td>!</td>
+               <td>Not</td>
+               <td><code>!$x</code></td>
+          </tr>
+     </tbody>
+</table>
+<h4 id="string-operators">String operators</h4>
+<ul>
+     <li>String operators are used to concatenate two strings</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Operator</th>
+               <th>Name</th>
+               <th>Example</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>.</td>
+               <td>Concatenation</td>
+               <td><code>$txt1 . $txt2</code></td>
+          </tr>
+          <tr>
+               <td>.=</td>
+               <td>Concatenation assignment</td>
+               <td><code>$txt1 .= $txt2</code></td>
+          </tr>
+     </tbody>
+</table>
+<h4 id="array-operators">Array operators</h4>
+<ul>
+     <li>Array operators are used to compare arrays</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Operator</th>
+               <th>Name</th>
+               <th>Example</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>+</td>
+               <td>Union</td>
+               <td><code>$x + $y</code></td>
+          </tr>
+          <tr>
+               <td>==</td>
+               <td>Equality</td>
+               <td><code>$x == $y</code></td>
+          </tr>
+          <tr>
+               <td>===</td>
+               <td>Identity</td>
+               <td><code>$x === $y</code></td>
+          </tr>
+          <tr>
+               <td>!=</td>
+               <td>Inequality</td>
+               <td><code>$x != $y</code></td>
+          </tr>
+          <tr>
+               <td>&lt;&gt;</td>
+               <td>Inequality</td>
+               <td><code>$x &lt;&gt; $y</code></td>
+          </tr>
+          <tr>
+               <td>!==</td>
+               <td>Non-identity</td>
+               <td><code>$x !== $y</code></td>
+          </tr>
+     </tbody>
+</table>
+<h4 id="conditional-assignment-operators">Conditional assignment operators</h4>
+<ul>
+     <li>Conditional assignment operators are used to assign a value to a variable based on a condition</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Operator</th>
+               <th>Name</th>
+               <th>Example</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>??</td>
+               <td>Null coalescing</td>
+               <td><code>$x ?? $y</code></td>
+          </tr>
+          <tr>
+               <td>?:</td>
+               <td>Ternary</td>
+               <td><code>$x ?: $y</code></td>
+          </tr>
+     </tbody>
+</table>
+<h1 id="conditional-statements">Conditional statements</h1>
+<ul>
+     <li>if statement</li>
+     <li>if...else statement</li>
+     <li>if...elseif...else statement</li>
+     <li>switch statement</li>
+</ul>
+<h4 id="if-statement">if statement</h4>
+<ul>
+     <li>The if statement executes some code if one condition is true</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-keyword">if</span> (condition) {
+  code <span class="hljs-keyword">to</span> be executed <span class="hljs-keyword">if</span> condition <span class="hljs-keyword">is</span> <span class="hljs-literal">true</span>;
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="if-statement-example">if statement example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $t = date(<span class="hljs-string">"H"</span>);
+    <span class="hljs-keyword">if</span> ($t &lt; <span class="hljs-string">"20"</span>) {
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"Have a good day!"</span>;
+    }
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="if-else-statement">if...else statement</h4>
+<ul>
+     <li>The if...else statement executes some code if a condition is true and another code if that condition is false
+     </li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-keyword">if</span> (condition) {
+  code <span class="hljs-keyword">to</span> be executed <span class="hljs-keyword">if</span> condition <span class="hljs-keyword">is</span> <span class="hljs-literal">true</span>;
+} <span class="hljs-keyword">else</span> {
+  code <span class="hljs-keyword">to</span> be executed <span class="hljs-keyword">if</span> condition <span class="hljs-keyword">is</span> <span class="hljs-literal">false</span>;
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="if-else-statement-example">if...else statement example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $t = date(<span class="hljs-string">"H"</span>);
+    <span class="hljs-keyword">if</span> ($t &lt; <span class="hljs-string">"20"</span>) {
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"Have a good day!"</span>;
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"Have a good night!"</span>;
+    }
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="if-elseif-else-statement">if...elseif...else statement</h4>
+<ul>
+     <li>The if...elseif...else statement executes different codes for more than two conditions</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-keyword">if</span> (condition) {
+  code to <span class="hljs-keyword">be</span> executed <span class="hljs-keyword">if</span> <span class="hljs-literal">this</span> condition <span class="hljs-keyword">is</span> <span class="hljs-literal">true</span>;
+} <span class="hljs-keyword">elseif</span> (condition) {
+  code to <span class="hljs-keyword">be</span> executed <span class="hljs-keyword">if</span> first condition <span class="hljs-keyword">is</span> <span class="hljs-literal">false</span> <span class="hljs-keyword">and</span> <span class="hljs-literal">this</span> condition <span class="hljs-keyword">is</span> <span class="hljs-literal">true</span>;
+} <span class="hljs-keyword">else</span> {
+  code to <span class="hljs-keyword">be</span> executed <span class="hljs-keyword">if</span> all conditions are <span class="hljs-literal">false</span>;
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="if-elseif-else-statement-example">if...elseif...else statement example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $t = date(<span class="hljs-string">"H"</span>);
+    <span class="hljs-keyword">if</span> ($t &lt; <span class="hljs-string">"10"</span>) {
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"Have a good morning!"</span>;
+    } <span class="hljs-keyword">elseif</span> ($t &lt; <span class="hljs-string">"20"</span>) {
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"Have a good day!"</span>;
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"Have a good night!"</span>;
+    }
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="switch-statement">switch statement</h4>
+<ul>
+     <li>The switch statement is used to perform different actions based on different conditions</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-keyword">switch</span> (n) {
+  <span class="hljs-keyword">case</span> label1:
+      code <span class="hljs-keyword">to</span> be executed <span class="hljs-keyword">if</span> n=label1;
+      <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> label2:
+      code <span class="hljs-keyword">to</span> be executed <span class="hljs-keyword">if</span> n=label2;
+      <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> label3:
+      code <span class="hljs-keyword">to</span> be executed <span class="hljs-keyword">if</span> n=label3;
+      <span class="hljs-keyword">break</span>;
+  ...
+  default:
+      code <span class="hljs-keyword">to</span> be executed <span class="hljs-keyword">if</span> n <span class="hljs-keyword">is</span> different <span class="hljs-keyword">from</span> all labels;
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="switch-statement-example">switch statement example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $favcolor = <span class="hljs-string">"red"</span>;
+    <span class="hljs-keyword">switch</span> ($favcolor) {
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"red"</span>:
+            <span class="hljs-keyword">echo</span> <span class="hljs-string">"Your favorite color is red!"</span>;
+            <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"blue"</span>:
+            <span class="hljs-keyword">echo</span> <span class="hljs-string">"Your favorite color is blue!"</span>;
+            <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"green"</span>:
+            <span class="hljs-keyword">echo</span> <span class="hljs-string">"Your favorite color is green!"</span>;
+            <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">default</span>:
+            <span class="hljs-keyword">echo</span> <span class="hljs-string">"Your favorite color is neither red, blue, nor green!"</span>;
+    }
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="loops">Loops</h1>
+<ul>
+     <li>while loop</li>
+     <li>do...while loop</li>
+     <li>for loop</li>
+     <li>foreach loop</li>
+</ul>
+<h4 id="while-loop">while loop</h4>
+<ul>
+     <li>The while loop executes a block of code as long as the specified condition is true</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-keyword">while</span> (condition <span class="hljs-keyword">is</span> <span class="hljs-literal">true</span>) {
+  code <span class="hljs-keyword">to</span> be executed;
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="while-loop-example">while loop example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $x = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">while</span>($x &lt;= <span class="hljs-number">5</span>) {
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"The number is: $x &lt;br&gt;"</span>;
+        $x++;
+    }
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="do-while-loop">do...while loop</h4>
+<ul>
+     <li>The do...while loop will always execute the block of code once, it will then check the condition, and repeat
+          the loop while the specified condition is true.</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-keyword">do</span> {
+  code <span class="hljs-keyword">to</span> be executed;
+} <span class="hljs-keyword">while</span> (condition <span class="hljs-keyword">is</span> <span class="hljs-literal">true</span>);
+</code></pre>
+     </li>
+</ul>
+<h4 id="do-while-loop-example">do...while loop example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $x = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">do</span> {
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"The number is: $x &lt;br&gt;"</span>;
+        $x++;
+    } <span class="hljs-keyword">while</span> ($x &lt;= <span class="hljs-number">5</span>);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="for-loop">for loop</h4>
+<ul>
+     <li>The for loop is used when you know in advance how many times the script should run.</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-attribute">for</span> (init counter; <span class="hljs-attribute">test</span> counter; <span class="hljs-attribute">increment</span> counter) {
+  <span class="hljs-attribute">code</span> to be executed;
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="for-loop-example">for loop example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-keyword">for</span> ($x = <span class="hljs-number">0</span>; $x &lt;= <span class="hljs-number">10</span>; $x++) {
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"The number is: $x &lt;br&gt;"</span>;
+    }
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="foreach-loop">foreach loop</h4>
+<ul>
+     <li>The foreach loop works only on arrays, and is used to loop through each key/value pair in an array.</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-attribute">foreach</span> (<span class="hljs-variable">$array</span> as <span class="hljs-variable">$value</span>) {
+  <span class="hljs-attribute">code</span> to be executed;
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="foreach-loop-example">foreach loop example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $colors = <span class="hljs-keyword">array</span>(<span class="hljs-string">"red"</span>, <span class="hljs-string">"green"</span>, <span class="hljs-string">"blue"</span>, <span class="hljs-string">"yellow"</span>);
+    <span class="hljs-keyword">foreach</span> ($colors <span class="hljs-keyword">as</span> $value) {
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"$value &lt;br&gt;"</span>;
+    }
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="functions">Functions</h1>
+<ul>
+     <li>User-defined functions</li>
+     <li>Built-in functions</li>
+</ul>
+<h4 id="user-defined-functions">User-defined functions</h4>
+<ul>
+     <li>A function is a block of statements that can be used repeatedly in a program.</li>
+     <li>A function will not execute automatically when a page loads.</li>
+     <li>A function will be executed by a call to the function.</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">functionName</span><span class="hljs-params">()</span> </span>{
+  code to be executed;
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="user-defined-functions-example">User-defined functions example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">writeMsg</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"Hello world!"</span>;
+    }
+    writeMsg();
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="built-in-functions">Built-in functions</h4>
+<ul>
+     <li>A function is a block of statements that can be used repeatedly in a program.</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">functionName</span><span class="hljs-params">()</span> </span>{
+  code to be executed;
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="built-in-functions-example">Built-in functions example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-keyword">echo</span> strlen(<span class="hljs-string">"Hello world!"</span>); 
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="function-arguments">Function arguments</h1>
+<ul>
+     <li>Arguments are specified after the function name, inside the parentheses.</li>
+     <li>You can add as many arguments as you want, just separate them with a comma.</li>
+</ul>
+<h4 id="function-arguments-example">function arguments example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">familyName</span><span class="hljs-params">($fname)</span> </span>{
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"$fname Refsnes.&lt;br&gt;"</span>;
+    }
+    familyName(<span class="hljs-string">"Jani"</span>);
+    familyName(<span class="hljs-string">"Hege"</span>);
+    familyName(<span class="hljs-string">"Stale"</span>);
+    familyName(<span class="hljs-string">"Kai Jim"</span>);
+    familyName(<span class="hljs-string">"Borge"</span>);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="default-argument-value">Default argument value</h1>
+<ul>
+     <li>If we call the function setHeight() without arguments it will use the default value as argument.</li>
+</ul>
+<h4 id="default-argument-value-example">default argument value example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setHeight</span><span class="hljs-params">($minheight = <span class="hljs-number">50</span>)</span> </span>{
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"The height is : $minheight &lt;br&gt;"</span>;
+    }
+    setHeight(<span class="hljs-number">350</span>);
+    setHeight(); <span class="hljs-comment">// will use the default value of 50</span>
+    setHeight(<span class="hljs-number">135</span>);
+    setHeight(<span class="hljs-number">80</span>);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="returning-values">Returning values</h1>
+<ul>
+     <li>To let a function return a value, use the return statement.</li>
+</ul>
+<h4 id="returning-values-example">returning values example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span><span class="hljs-params">($x, $y)</span> </span>{
+        $z = $x + $y;
+        <span class="hljs-keyword">return</span> $z;
+    }
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"5 + 10 = "</span> . sum(<span class="hljs-number">5</span>,<span class="hljs-number">10</span>) . <span class="hljs-string">"&lt;br&gt;"</span>;
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"7 + 13 = "</span> . sum(<span class="hljs-number">7</span>,<span class="hljs-number">13</span>) . <span class="hljs-string">"&lt;br&gt;"</span>;
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"2 + 4 = "</span> . sum(<span class="hljs-number">2</span>,<span class="hljs-number">4</span>);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="break-and-continue">Break and continue</h1>
+<ul>
+     <li>break</li>
+     <li>continue</li>
+</ul>
+<h4 id="break">break</h4>
+<ul>
+     <li>The break statement can be used to jump out of a loop.</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-keyword">break</span>;
+</code></pre>
+     </li>
+</ul>
+<h4 id="break-example">break example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-keyword">for</span> ($x = <span class="hljs-number">0</span>; $x &lt; <span class="hljs-number">10</span>; $x++) {
+        <span class="hljs-keyword">if</span> ($x == <span class="hljs-number">4</span>) {
+            <span class="hljs-keyword">break</span>;
+        }
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"The number is: $x &lt;br&gt;"</span>;
+    }
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="continue">continue</h4>
+<ul>
+     <li>The continue statement can be used to skip the current iteration in a loop.</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-keyword">continue</span>;
+</code></pre>
+     </li>
+</ul>
+<h4 id="continue-example">continue example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-keyword">for</span> ($x = <span class="hljs-number">0</span>; $x &lt; <span class="hljs-number">10</span>; $x++) {
+        <span class="hljs-keyword">if</span> ($x == <span class="hljs-number">4</span>) {
+            <span class="hljs-keyword">continue</span>;
+        }
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"The number is: $x &lt;br&gt;"</span>;
+    }
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="strings-in-php">Strings in PHP</h1>
+<ul>
+     <li>strlen()</li>
+     <li>str_word_count()</li>
+     <li>strrev()</li>
+     <li>strpos()</li>
+     <li>str_replace()</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Function</th>
+               <th>Description</th>
+               <th>Example</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>strlen()</td>
+               <td>Returns the length of a string</td>
+               <td><code>echo strlen(&quot;Hello world!&quot;);</code></td>
+          </tr>
+          <tr>
+               <td>str_word_count()</td>
+               <td>Counts the number of words in a string</td>
+               <td><code>echo str_word_count(&quot;Hello world!&quot;);</code></td>
+          </tr>
+          <tr>
+               <td>strrev()</td>
+               <td>Reverses a string</td>
+               <td><code>echo strrev(&quot;Hello world!&quot;);</code></td>
+          </tr>
+          <tr>
+               <td>strpos()</td>
+               <td>Searches for a specific text within a string</td>
+               <td><code>echo strpos(&quot;Hello world!&quot;, &quot;world&quot;);</code></td>
+          </tr>
+          <tr>
+               <td>str_replace()</td>
+               <td>Replaces some characters with some other characters in a string</td>
+               <td><code>echo str_replace(&quot;world&quot;, &quot;Dolly&quot;, &quot;Hello world!&quot;);</code></td>
+          </tr>
+     </tbody>
+</table>
+<h1 id="arrays-in-php">Arrays in PHP</h1>
+<ul>
+     <li>An array is a special variable, which can hold more than one value at a time. it is a container which can hold
+          multiple values at the same time.</li>
+     <li>An array is a data structure which stores values of same data type.</li>
+     <li>Array is a collection of elements which are accessed using an index.</li>
+</ul>
+<h4 id="creating-an-array">Creating an array</h4>
+<ul>
+     <li>There are three ways to create an array in PHP.</li>
+     <li>array() function</li>
+     <li>array keyword</li>
+     <li>short array syntax</li>
+</ul>
+<h4 id="array-function">array() function</h4>
+<ul>
+     <li>Syntax
+          <pre><code class="lang-php">array(<span class="hljs-keyword">value</span><span class="hljs-number">1</span>, <span class="hljs-keyword">value</span><span class="hljs-number">2</span>, <span class="hljs-keyword">value</span><span class="hljs-number">3</span>, ...)
+</code></pre>
+     </li>
+</ul>
+<h4 id="array-function-example">array() function example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $cars = <span class="hljs-keyword">array</span>(<span class="hljs-string">"Volvo"</span>, <span class="hljs-string">"BMW"</span>, <span class="hljs-string">"Toyota"</span>);
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"I like "</span> . $cars[<span class="hljs-number">0</span>] . <span class="hljs-string">", "</span> . $cars[<span class="hljs-number">1</span>] . <span class="hljs-string">" and "</span> . $cars[<span class="hljs-number">2</span>] . <span class="hljs-string">"."</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="array-keyword">array keyword</h4>
+<ul>
+     <li>Syntax
+          <pre><code class="lang-php">array = [<span class="hljs-keyword">value</span><span class="hljs-number">1</span>, <span class="hljs-keyword">value</span><span class="hljs-number">2</span>, <span class="hljs-keyword">value</span><span class="hljs-number">3</span>, ...]
+</code></pre>
+     </li>
+</ul>
+<h4 id="array-keyword-example">array keyword example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $cars = [<span class="hljs-string">"Volvo"</span>, <span class="hljs-string">"BMW"</span>, <span class="hljs-string">"Toyota"</span>];
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"I like "</span> . $cars[<span class="hljs-number">0</span>] . <span class="hljs-string">", "</span> . $cars[<span class="hljs-number">1</span>] . <span class="hljs-string">" and "</span> . $cars[<span class="hljs-number">2</span>] . <span class="hljs-string">"."</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="short-array-syntax">short array syntax</h4>
+<ul>
+     <li>Syntax
+          <pre><code class="lang-php">array = [<span class="hljs-keyword">value</span><span class="hljs-number">1</span>, <span class="hljs-keyword">value</span><span class="hljs-number">2</span>, <span class="hljs-keyword">value</span><span class="hljs-number">3</span>, ...]
+</code></pre>
+     </li>
+</ul>
+<h4 id="short-array-syntax-example">short array syntax example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $cars = [<span class="hljs-string">"Volvo"</span>, <span class="hljs-string">"BMW"</span>, <span class="hljs-string">"Toyota"</span>];
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"I like "</span> . $cars[<span class="hljs-number">0</span>] . <span class="hljs-string">", "</span> . $cars[<span class="hljs-number">1</span>] . <span class="hljs-string">" and "</span> . $cars[<span class="hljs-number">2</span>] . <span class="hljs-string">"."</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="types-of-arrays">Types of arrays</h1>
+<ul>
+     <li>Indexed arrays</li>
+     <li>Associative arrays</li>
+     <li>Multidimensional arrays</li>
+</ul>
+<h4 id="indexed-arrays">Indexed arrays</h4>
+<ul>
+     <li>An indexed array is an array that has a numeric index.</li>
+     <li>Syntax
+          <pre><code class="lang-php">array = [<span class="hljs-keyword">value</span><span class="hljs-number">1</span>, <span class="hljs-keyword">value</span><span class="hljs-number">2</span>, <span class="hljs-keyword">value</span><span class="hljs-number">3</span>, ...]
+</code></pre>
+     </li>
+</ul>
+<h4 id="indexed-arrays-example">Indexed arrays example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $cars = [<span class="hljs-string">"Volvo"</span>, <span class="hljs-string">"BMW"</span>, <span class="hljs-string">"Toyota"</span>];
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"I like "</span> . $cars[<span class="hljs-number">0</span>] . <span class="hljs-string">", "</span> . $cars[<span class="hljs-number">1</span>] . <span class="hljs-string">" and "</span> . $cars[<span class="hljs-number">2</span>] . <span class="hljs-string">"."</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="associative-arrays">Associative arrays</h4>
+<ul>
+     <li>An associative array is an array that uses named keys that you assign to it.</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-attr">array</span> = [<span class="hljs-attr">key1</span> =&gt; value1, <span class="hljs-attr">key2</span> =&gt; value2, <span class="hljs-attr">key3</span> =&gt; value3, ...]
+</code></pre>
+     </li>
+</ul>
+<h4 id="associative-arrays-example">Associative arrays example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $age = [<span class="hljs-string">"Peter"</span> =&gt; <span class="hljs-string">"35"</span>, <span class="hljs-string">"Ben"</span> =&gt; <span class="hljs-string">"37"</span>, <span class="hljs-string">"Joe"</span> =&gt; <span class="hljs-string">"43"</span>];
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Peter is "</span> . $age[<span class="hljs-string">'Peter'</span>] . <span class="hljs-string">" years old."</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="multidimensional-arrays">Multidimensional arrays</h4>
+<ul>
+     <li>A multidimensional array is an array containing one or more arrays.</li>
+     <li>Syntax
+          <pre><code class="lang-php">array = [
+  [<span class="hljs-keyword">value</span><span class="hljs-number">1</span>, <span class="hljs-keyword">value</span><span class="hljs-number">2</span>, <span class="hljs-keyword">value</span><span class="hljs-number">3</span>, ...]
+  [<span class="hljs-keyword">value</span><span class="hljs-number">1</span>, <span class="hljs-keyword">value</span><span class="hljs-number">2</span>, <span class="hljs-keyword">value</span><span class="hljs-number">3</span>, ...]
+  [<span class="hljs-keyword">value</span><span class="hljs-number">1</span>, <span class="hljs-keyword">value</span><span class="hljs-number">2</span>, <span class="hljs-keyword">value</span><span class="hljs-number">3</span>, ...]
+];
+</code></pre>
+     </li>
+</ul>
+<h4 id="multidimensional-arrays-example">Multidimensional arrays example</h4>
+<pre><code class="lang-php">&lt;?php
+    $cars = [
+        [<span class="hljs-string">"Volvo"</span>, <span class="hljs-number">22</span>, <span class="hljs-number">18</span>],
+        [<span class="hljs-string">"BMW"</span>, <span class="hljs-number">15</span>, <span class="hljs-number">13</span>],
+        [<span class="hljs-string">"Saab"</span>, <span class="hljs-number">5</span>, <span class="hljs-number">2</span>],
+        [<span class="hljs-string">"Land Rover"</span>, <span class="hljs-number">17</span>, <span class="hljs-number">15</span>]
+    ];
+    echo $cars[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] . <span class="hljs-string">": In stock: "</span> . $cars[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>] . <span class="hljs-string">", sold: "</span> . $cars[<span class="hljs-number">0</span>][<span class="hljs-number">2</span>] . <span class="hljs-string">".&lt;br&gt;"</span>;
+    echo $cars[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>] . <span class="hljs-string">": In stock: "</span> . $cars[<span class="hljs-number">1</span>][<span class="hljs-number">1</span>] . <span class="hljs-string">", sold: "</span> . $cars[<span class="hljs-number">1</span>][<span class="hljs-number">2</span>] . <span class="hljs-string">".&lt;br&gt;"</span>;
+    echo $cars[<span class="hljs-number">2</span>][<span class="hljs-number">0</span>] . <span class="hljs-string">": In stock: "</span> . $cars[<span class="hljs-number">2</span>][<span class="hljs-number">1</span>] . <span class="hljs-string">", sold: "</span> . $cars[<span class="hljs-number">2</span>][<span class="hljs-number">2</span>] . <span class="hljs-string">".&lt;br&gt;"</span>;
+    echo $cars[<span class="hljs-number">3</span>][<span class="hljs-number">0</span>] . <span class="hljs-string">": In stock: "</span> . $cars[<span class="hljs-number">3</span>][<span class="hljs-number">1</span>] . <span class="hljs-string">", sold: "</span> . $cars[<span class="hljs-number">3</span>][<span class="hljs-number">2</span>] . <span class="hljs-string">".&lt;br&gt;"</span>;
+?&gt;
+</code></pre>
+<h1 id="array-functions">Array functions</h1>
+<table>
+     <thead>
+          <tr>
+               <th>Function</th>
+               <th>Description</th>
+               <th>Example</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>count()</td>
+               <td>Counts the number of elements in an array</td>
+               <td><code>echo count($cars);</code></td>
+          </tr>
+          <tr>
+               <td>sort()</td>
+               <td>Sorts an array in ascending order</td>
+               <td><code>sort($cars);</code></td>
+          </tr>
+          <tr>
+               <td>rsort()</td>
+               <td>Sorts an array in descending order</td>
+               <td><code>rsort($cars);</code></td>
+          </tr>
+          <tr>
+               <td>asort()</td>
+               <td>Sorts an associative array in ascending order, according to the value</td>
+               <td><code>asort($age);</code></td>
+          </tr>
+          <tr>
+               <td>ksort()</td>
+               <td>Sorts an associative array in ascending order, according to the key</td>
+               <td><code>ksort($age);</code></td>
+          </tr>
+          <tr>
+               <td>arsort()</td>
+               <td>Sorts an associative array in descending order, according to the value</td>
+               <td><code>arsort($age);</code></td>
+          </tr>
+          <tr>
+               <td>krsort()</td>
+               <td>Sorts an associative array in descending order, according to the key</td>
+               <td><code>krsort($age);</code></td>
+          </tr>
+     </tbody>
+</table>
+<h1 id="accessing-html-data-using-get-and-post-method">Accessing HTML data using get and post method</h1>
+<ul>
+     <li>The HTML form data can be accessed using the $_GET and $_POST variables.</li>
+     <li>The $_GET variable is used to collect form data after submitting an HTML form with method=&quot;get&quot;.</li>
+     <li>The $_POST variable is used to collect form data after submitting an HTML form with method=&quot;post&quot;.
+     </li>
+</ul>
+<h4 id="get-method">get method</h4>
+<ul>
+     <li>The $_GET variable is an associative array that contains the data sent using the GET method.</li>
+     <li>The data sent using the GET method is visible to everyone.</li>
+     <li>The data sent using the GET method is visible in the URL.</li>
+     <li>The data sent using the GET method is limited to 1024 characters.</li>
+     <li>The data sent using the GET method is not secure.</li>
+     <li>The data sent using the GET method is not recommended for sensitive data.</li>
+     <li>The data sent using the GET method is not recommended for sending passwords or credit card numbers.</li>
+     <li>The data sent using the GET method is not recommended for sending large amounts of data.</li>
+     <li>The data sent using the GET method is not recommended for sending binary data, such as images or files.</li>
+</ul>
+<h4 id="get-method-example">get method example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Study "</span> . $_GET[<span class="hljs-string">'subject'</span>] . <span class="hljs-string">" at "</span> . $_GET[<span class="hljs-string">'web'</span>];
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<ul>
+     <li>subject and web are the names of the input fields in the HTML form.</li>
+</ul>
+<h4 id="post-method">post method</h4>
+<ul>
+     <li>The $_POST variable is an associative array that contains the data sent using the POST method.</li>
+     <li>The data sent using the POST method is not visible to everyone.</li>
+     <li>The data sent using the POST method is not visible in the URL.</li>
+     <li>The data sent using the POST method is not limited to 1024 characters.</li>
+     <li>The data sent using the POST method is secure.</li>
+     <li>The data sent using the POST method is recommended for sensitive data.</li>
+     <li>The data sent using the POST method is recommended for sending passwords or credit card numbers.</li>
+     <li>The data sent using the POST method is recommended for sending large amounts of data.</li>
+     <li>The data sent using the POST method is recommended for sending binary data, such as images or files.</li>
+</ul>
+<h4 id="post-method-example">post method example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Study "</span> . $_POST[<span class="hljs-string">'subject'</span>] . <span class="hljs-string">" at "</span> . $_POST[<span class="hljs-string">'web'</span>];
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<ul>
+     <li>subject and web are the names of the input fields in the HTML form.</li>
+</ul>
+<h1 id="user-defined-functions-and-there-usage">User defined functions and there usage</h1>
+<ul>
+     <li>A function is a block of statements that can be used repeatedly in a program.</li>
+     <li>A function will not execute immediately when a page loads.</li>
+     <li>A function will be executed by a call to the function.</li>
+</ul>
+<h4 id="function-syntax">function syntax</h4>
+<pre><code class="lang-php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">functionName</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// code to be executed</span>
+}
+</code></pre>
+<h4 id="function-example">function example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">writeMsg</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"Hello world!"</span>;
+    }
+    writeMsg(); <span class="hljs-comment">// call the function</span>
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h1 id="date-and-time-in-php">Date and Time in PHP</h1>
+<ul>
+     <li>date()</li>
+     <li>time()</li>
+     <li>mktime()</li>
+     <li>strtotime()</li>
+</ul>
+<h4 id="date-">date()</h4>
+<ul>
+     <li>it is used to format a local time/date.</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-function"><span class="hljs-title">date</span><span class="hljs-params">(format, timestamp)</span></span>
+</code></pre>
+     </li>
+</ul>
+<h4 id="date-example">date() example</h4>
+<pre><code class="lang-php">&lt;?php
+    <span class="hljs-built_in">echo</span> <span class="hljs-string">"Today is "</span> . <span class="hljs-built_in">date</span>(<span class="hljs-string">"Y/m/d"</span>) . <span class="hljs-string">"&lt;br&gt;"</span>;
+    <span class="hljs-built_in">echo</span> <span class="hljs-string">"Today is "</span> . <span class="hljs-built_in">date</span>(<span class="hljs-string">"Y.m.d"</span>) . <span class="hljs-string">"&lt;br&gt;"</span>;
+    <span class="hljs-built_in">echo</span> <span class="hljs-string">"Today is "</span> . <span class="hljs-built_in">date</span>(<span class="hljs-string">"Y-m-d"</span>) . <span class="hljs-string">"&lt;br&gt;"</span>;
+    <span class="hljs-built_in">echo</span> <span class="hljs-string">"Today is "</span> . <span class="hljs-built_in">date</span>(<span class="hljs-string">"l"</span>);
+?&gt;
+</code></pre>
+<h4 id="time-">time()</h4>
+<ul>
+     <li>it is used to return the current time in seconds since the Unix Epoch (January 1 1970 00:00:00 GMT).</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-function"><span class="hljs-title">time</span><span class="hljs-params">()</span></span>
+</code></pre>
+     </li>
+</ul>
+<h4 id="time-example">time() example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"The time is "</span> . date(<span class="hljs-string">"h:i:sa"</span>);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<ul>
+     <li>h is hour in 12-hour format</li>
+     <li>i is minutes</li>
+     <li>s is seconds</li>
+     <li>a is am or pm</li>
+</ul>
+<h4 id="mktime-">mktime()</h4>
+<ul>
+     <li>it is used to get Unix timestamp for a date.</li>
+     <li>Syntax
+          <pre><code class="lang-php">mktime(<span class="hljs-built_in">hour</span>, <span class="hljs-built_in">minute</span>, <span class="hljs-built_in">second</span>, <span class="hljs-built_in">month</span>, <span class="hljs-built_in">day</span>, <span class="hljs-built_in">year</span>)
+</code></pre>
+     </li>
+</ul>
+<h4 id="mktime-example">mktime() example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $d = mktime(<span class="hljs-number">11</span>, <span class="hljs-number">14</span>, <span class="hljs-number">54</span>, <span class="hljs-number">8</span>, <span class="hljs-number">12</span>, <span class="hljs-number">2014</span>);
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Created date is "</span> . date(<span class="hljs-string">"Y-m-d h:i:sa"</span>, $d);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<h4 id="strtotime-">strtotime()</h4>
+<ul>
+     <li>it is used to convert a human readable string to a Unix timestamp.</li>
+     <li>Syntax
+          <pre><code class="lang-php"><span class="hljs-function"><span class="hljs-title">strtotime</span><span class="hljs-params">(time, now)</span></span>
+</code></pre>
+     </li>
+</ul>
+<h4 id="strtotime-example">strtotime() example</h4>
+<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+    $d=strtotime(<span class="hljs-string">"10:30pm April 15 2014"</span>);
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Created date is "</span> . date(<span class="hljs-string">"Y-m-d h:i:sa"</span>, $d) . <span class="hljs-string">"&lt;br&gt;"</span>;
+
+    $d=strtotime(<span class="hljs-string">"tomorrow"</span>);
+    <span class="hljs-keyword">echo</span> date(<span class="hljs-string">"Y-m-d h:i:sa"</span>, $d) . <span class="hljs-string">"&lt;br&gt;"</span>;
+
+    $d=strtotime(<span class="hljs-string">"next Saturday"</span>);
+    <span class="hljs-keyword">echo</span> date(<span class="hljs-string">"Y-m-d h:i:sa"</span>, $d) . <span class="hljs-string">"&lt;br&gt;"</span>;
+
+    $d=strtotime(<span class="hljs-string">"+3 Months"</span>);
+    <span class="hljs-keyword">echo</span> date(<span class="hljs-string">"Y-m-d h:i:sa"</span>, $d) . <span class="hljs-string">"&lt;br&gt;"</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+<ul>
+     <li>Y is year</li>
+     <li>m is month</li>
+     <li>d is day</li>
+     <li>h is hour</li>
+     <li>i is minutes</li>
+     <li>s is seconds</li>
+     <li>a is am or pm</li>
+</ul>
+<h1 id="number-in-php">Number in PHP</h1>
+<table>
+     <thead>
+          <tr>
+               <th>Function</th>
+               <th>Description</th>
+               <th>Example</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>abs()</td>
+               <td>Returns the absolute (positive) value of a number</td>
+               <td><code>echo abs(-6.7);</code></td>
+          </tr>
+          <tr>
+               <td>acos()</td>
+               <td>Returns the arc cosine of a number</td>
+               <td><code>echo acos(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>acosh()</td>
+               <td>Returns the inverse hyperbolic cosine of a number</td>
+               <td><code>echo acosh(64);</code></td>
+          </tr>
+          <tr>
+               <td>asin()</td>
+               <td>Returns the arc sine of a number</td>
+               <td><code>echo asin(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>asinh()</td>
+               <td>Returns the inverse hyperbolic sine of a number</td>
+               <td><code>echo asinh(64);</code></td>
+          </tr>
+          <tr>
+               <td>atan()</td>
+               <td>Returns the arc tangent of a number</td>
+               <td><code>echo atan(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>atan2()</td>
+               <td>Returns the arc tangent of two variables</td>
+               <td><code>echo atan2(0.64, 0.64);</code></td>
+          </tr>
+          <tr>
+               <td>atanh()</td>
+               <td>Returns the inverse hyperbolic tangent of a number</td>
+               <td><code>echo atanh(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>base_convert()</td>
+               <td>Converts a number between arbitrary bases</td>
+               <td><code>echo base_convert(&quot;FF&quot;, 16, 2);</code></td>
+          </tr>
+          <tr>
+               <td>bindec()</td>
+               <td>Converts a binary number to a decimal number</td>
+               <td><code>echo bindec(11111111);</code></td>
+          </tr>
+          <tr>
+               <td>ceil()</td>
+               <td>Rounds a number up to the nearest integer</td>
+               <td><code>echo ceil(0.60);</code></td>
+          </tr>
+          <tr>
+               <td>cos()</td>
+               <td>Returns the cosine of a number</td>
+               <td><code>echo cos(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>cosh()</td>
+               <td>Returns the hyperbolic cosine of a number</td>
+               <td><code>echo cosh(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>decbin()</td>
+               <td>Converts a decimal number to a binary number</td>
+               <td><code>echo decbin(255);</code></td>
+          </tr>
+          <tr>
+               <td>dechex()</td>
+               <td>Converts a decimal number to a hexadecimal number</td>
+               <td><code>echo dechex(255);</code></td>
+          </tr>
+          <tr>
+               <td>decoct()</td>
+               <td>Converts a decimal number to an octal number</td>
+               <td><code>echo decoct(255);</code></td>
+          </tr>
+          <tr>
+               <td>deg2rad()</td>
+               <td>Converts the number in degrees to the radian equivalent</td>
+               <td><code>echo deg2rad(45);</code></td>
+          </tr>
+          <tr>
+               <td>exp()</td>
+               <td>Returns e raised to the power of a number</td>
+               <td><code>echo exp(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>expm1()</td>
+               <td>Returns exp(number) - 1, computed in a way that is accurate even when the value of number is close to
+                    zero</td>
+               <td><code>echo expm1(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>floor()</td>
+               <td>Rounds a number down to the nearest integer</td>
+               <td><code>echo floor(0.60);</code></td>
+          </tr>
+          <tr>
+               <td>fmod()</td>
+               <td>Returns the floating point remainder (modulo) of the division of the arguments</td>
+               <td><code>echo fmod(0.64, 0.64);</code></td>
+          </tr>
+          <tr>
+               <td>getrandmax()</td>
+               <td>Returns the largest possible random value</td>
+               <td><code>echo getrandmax();</code></td>
+          </tr>
+          <tr>
+               <td>hexdec()</td>
+               <td>Converts a hexadecimal number to a decimal number</td>
+               <td><code>echo hexdec(FF);</code></td>
+          </tr>
+          <tr>
+               <td>hypot()</td>
+               <td>Calculates the length of the hypotenuse of a right-angle triangle</td>
+               <td><code>echo hypot(0.64, 0.64);</code></td>
+          </tr>
+          <tr>
+               <td>is_finite()</td>
+               <td>Finds whether a value is a legal finite number</td>
+               <td><code>echo is_finite(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>is_infinite()</td>
+               <td>Finds whether a value is infinite</td>
+               <td><code>echo is_infinite(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>is_nan()</td>
+               <td>Finds whether a value is not a number</td>
+               <td><code>echo is_nan(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>lcg_value()</td>
+               <td>Returns a random number from the combined linear congruential generator</td>
+               <td><code>echo lcg_value();</code></td>
+          </tr>
+          <tr>
+               <td>log()</td>
+               <td>Returns the natural logarithm of a number</td>
+               <td><code>echo log(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>log10()</td>
+               <td>Returns the base-10 logarithm of a number</td>
+               <td><code>echo log10(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>log1p()</td>
+               <td>Returns log(1 + number), computed in a way that is accurate even when the value of number is close to
+                    zero</td>
+               <td><code>echo log1p(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>max()</td>
+               <td>Finds highest value</td>
+               <td><code>echo max(0.64, 0.64);</code></td>
+          </tr>
+          <tr>
+               <td>min()</td>
+               <td>Finds lowest value</td>
+               <td><code>echo min(0.64, 0.64);</code></td>
+          </tr>
+          <tr>
+               <td>mt_getrandmax()</td>
+               <td>Returns the largest possible random value</td>
+               <td><code>echo mt_getrandmax();</code></td>
+          </tr>
+          <tr>
+               <td>mt_rand()</td>
+               <td>Generates a better random value</td>
+               <td><code>echo mt_rand();</code></td>
+          </tr>
+          <tr>
+               <td>mt_srand()</td>
+               <td>Seeds the better random number generator</td>
+               <td><code>echo mt_srand();</code></td>
+          </tr>
+          <tr>
+               <td>octdec()</td>
+               <td>Converts an octal number to a decimal number</td>
+               <td><code>echo octdec(377);</code></td>
+          </tr>
+          <tr>
+               <td>pi()</td>
+               <td>Returns the value of pi</td>
+               <td><code>echo pi();</code></td>
+          </tr>
+          <tr>
+               <td>pow()</td>
+               <td>Exponentiation operator</td>
+               <td><code>echo pow(0.64, 0.64);</code></td>
+          </tr>
+          <tr>
+               <td>rad2deg()</td>
+               <td>Converts the radian number to the equivalent number in degrees</td>
+               <td><code>echo rad2deg(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>rand()</td>
+               <td>Generates a random integer</td>
+               <td><code>echo rand();</code></td>
+          </tr>
+          <tr>
+               <td>round()</td>
+               <td>Rounds a number</td>
+               <td><code>echo round(0.60);</code></td>
+          </tr>
+          <tr>
+               <td>sin()</td>
+               <td>Returns the sine of a number</td>
+               <td><code>echo sin(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>sinh()</td>
+               <td>Returns the hyperbolic sine of a number</td>
+               <td><code>echo sinh(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>sqrt()</td>
+               <td>Returns the square root of a number</td>
+               <td><code>echo sqrt(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>srand()</td>
+               <td>Seeds the random number generator</td>
+               <td><code>echo srand();</code></td>
+          </tr>
+          <tr>
+               <td>tan()</td>
+               <td>Returns the tangent of a number</td>
+               <td><code>echo tan(0.64);</code></td>
+          </tr>
+          <tr>
+               <td>tanh()</td>
+               <td>Returns the hyperbolic tangent of a number</td>
+               <td><code>echo tanh(0.64);</code></td>
+          </tr>
+     </tbody>
+</table>
+<h1 id="miscellaneous-library-functions-in-php">Miscellaneous Library Functions in PHP</h1>
+<table>
+     <thead>
+          <tr>
+               <th>Function</th>
+               <th>Description</th>
+               <th>Example</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>constant()</td>
+               <td>Returns the value of a constant</td>
+               <td><code>echo constant(&quot;PHP_VERSION&quot;);</code></td>
+          </tr>
+          <tr>
+               <td>defined()</td>
+               <td>Checks whether a given named constant exists</td>
+               <td><code>echo defined(&quot;PHP_VERSION&quot;);</code></td>
+          </tr>
+          <tr>
+               <td>die()</td>
+               <td>Prints a message and exits the current script</td>
+               <td><code>echo die(&quot;Something went wrong&quot;);</code></td>
+          </tr>
+          <tr>
+               <td>echo()</td>
+               <td>Outputs one or more strings</td>
+               <td><code>echo echo(&quot;Something went wrong&quot;);</code></td>
+          </tr>
+          <tr>
+               <td>empty()</td>
+               <td>Checks whether a variable is empty</td>
+               <td><code>echo empty($var);</code></td>
+          </tr>
+          <tr>
+               <td>exit()</td>
+               <td>Prints a message and exits the current script</td>
+               <td><code>echo exit(&quot;Something went wrong&quot;);</code></td>
+          </tr>
+          <tr>
+               <td>eval()</td>
+               <td>Evaluates a string as PHP code</td>
+               <td><code>echo eval(&quot;echo &#39;Hello World&#39;;&quot;);</code></td>
+          </tr>
+          <tr>
+               <td>get_browser()</td>
+               <td>Returns information about the user&#39;s browser</td>
+               <td><code>echo get_browser();</code></td>
+          </tr>
+          <tr>
+               <td>get_defined_constants()</td>
+               <td>Returns an array with the names of all the constants and their values</td>
+               <td><code>echo get_defined_constants();</code></td>
+          </tr>
+          <tr>
+               <td>get_defined_functions()</td>
+               <td>Returns an array with the names of all the defined functions</td>
+               <td><code>echo get_defined_functions();</code></td>
+          </tr>
+          <tr>
+               <td>get_defined_vars()</td>
+               <td>Returns an associative array with the names of all the variables and their values</td>
+               <td><code>echo get_defined_vars();</code></td>
+          </tr>
+          <tr>
+               <td>get_include_path()</td>
+               <td>Returns the current include_path configuration option</td>
+               <td><code>echo get_include_path();</code></td>
+          </tr>
+          <tr>
+               <td>get_included_files()</td>
+               <td>Returns an array with the names of all the files that have been included, either with require or
+                    include</td>
+               <td><code>echo get_included_files();</code></td>
+          </tr>
+          <tr>
+               <td>get_loaded_extensions()</td>
+               <td>Returns an array with the names of all the modules compiled and loaded</td>
+               <td><code>echo get_loaded_extensions();</code></td>
+          </tr>
+          <tr>
+               <td>get_magic_quotes_gpc()</td>
+               <td>Gets the current configuration setting of magic_quotes_gpc</td>
+               <td><code>echo get_magic_quotes_gpc();</code></td>
+          </tr>
+          <tr>
+               <td>get_magic_quotes_runtime()</td>
+               <td>Gets the current active configuration setting of magic_quotes_runtime</td>
+               <td><code>echo get_magic_quotes_runtime();</code></td>
+          </tr>
+          <tr>
+               <td>getenv()</td>
+               <td>Gets the value of an environment variable</td>
+               <td><code>echo getenv(&quot;PATH&quot;);</code></td>
+          </tr>
+          <tr>
+               <td>gettype()</td>
+               <td>Gets the type of a variable</td>
+               <td><code>echo gettype($var);</code></td>
+          </tr>
+          <tr>
+               <td>import_request_variables()</td>
+               <td>Imports GET/POST/Cookie variables into the global scope</td>
+               <td><code>echo import_request_variables(&quot;GPC&quot;);</code></td>
+          </tr>
+          <tr>
+               <td>ini_alter()</td>
+               <td>Changes the value of a configuration option</td>
+               <td><code>echo ini_alter(&quot;display_errors&quot;, &quot;On&quot;);</code></td>
+          </tr>
+          <tr>
+               <td>ini_get()</td>
+               <td>Gets the value of a configuration option</td>
+               <td><code>echo ini_get(&quot;display_errors&quot;);</code></td>
+          </tr>
+     </tbody>
+</table>
+<h1 id="applications-of-php">Applications of PHP</h1>
+<ul>
+     <li>PHP is used to create dynamic web pages, web applications, web services, and APIs.</li>
+     <li>PHP is used for data encryption and decryption.</li>
+     <li>PHP is used for resticating the access of the user to any web page.</li>
+</ul>
+<h1 id="global-constants-in-php">Global constants in PHP</h1>
+<ul>
+     <li>PHP has a number of predefined constants that are available in all scopes. These constants are called global
+          constants.</li>
+     <li>The following table lists some of the most commonly used global constants in PHP.</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Constant</th>
+               <th>Description</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>PHP_VERSION</td>
+               <td>Returns the current PHP version</td>
+          </tr>
+          <tr>
+               <td>PHP_OS</td>
+               <td>Returns the operating system PHP is running on</td>
+          </tr>
+          <tr>
+               <td>PHP_EOL</td>
+               <td>Returns the end of line character(s)</td>
+          </tr>
+          <tr>
+               <td>PHP_SAPI</td>
+               <td>Returns the server API</td>
+          </tr>
+          <tr>
+               <td>PHP_INT_MAX</td>
+               <td>Returns the maximum value of a signed integer</td>
+          </tr>
+          <tr>
+               <td>PHP_INT_MIN</td>
+               <td>Returns the minimum value of a signed integer</td>
+          </tr>
+          <tr>
+               <td>PHP_INT_SIZE</td>
+               <td>Returns the size of a signed integer</td>
+          </tr>
+          <tr>
+               <td>PHP_FLOAT_MAX</td>
+               <td>Returns the maximum value of a float</td>
+          </tr>
+          <tr>
+               <td>PHP_FLOAT_MIN</td>
+               <td>Returns the minimum value of a float</td>
+          </tr>
+          <tr>
+               <td>PHP_FLOAT_SIZE</td>
+               <td>Returns the size of a float</td>
+          </tr>
+          <tr>
+               <td>PHP_MAXPATHLEN</td>
+               <td>Returns the maximum length of an include path</td>
+          </tr>
+          <tr>
+               <td>PHP_M_INFO</td>
+               <td>Returns the PHP configuration information</td>
+          </tr>
+          <tr>
+               <td>PHP_M_INFO_ALL</td>
+               <td>Returns the PHP configuration information</td>
+          </tr>
+          <tr>
+               <td>PHP_M_INFO_GENERAL</td>
+               <td>Returns the PHP configuration information</td>
+          </tr>
+          <tr>
+               <td>PHP_M_INFO_CREDITS</td>
+               <td>Returns the PHP configuration information</td>
+          </tr>
+          <tr>
+               <td>PHP_M_INFO_ENVIRONMENT</td>
+               <td>Returns the PHP configuration information</td>
+          </tr>
+          <tr>
+               <td>PHP_M_INFO_VARIABLES</td>
+               <td>Returns the PHP configuration information</td>
+          </tr>
+          <tr>
+               <td>PHP_M_INFO_LICENSE</td>
+               <td>Returns the PHP configuration information</td>
+          </tr>
+          <tr>
+               <td>PHP_M_INFO_ALL</td>
+               <td>Returns the PHP configuration information</td>
+          </tr>
+     </tbody>
+</table>
+<h1 id="macros-in-php">Macros in PHP</h1>
+<ul>
+     <li>PHP has a number of predefined macros that are available in all scopes. These macros are called global macros.
+     </li>
+     <li>The following table lists some of the most commonly used global macros in PHP.</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Macro</th>
+               <th>Description</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td><code>__LINE__</code></td>
+               <td>Returns the current line number of the file</td>
+          </tr>
+          <tr>
+               <td><code>__FILE__</code></td>
+               <td>Returns the full path and filename of the file</td>
+          </tr>
+          <tr>
+               <td><code>__DIR__</code></td>
+               <td>Returns the directory of the file</td>
+          </tr>
+          <tr>
+               <td><code>__FUNCTION__</code></td>
+               <td>Returns the function name</td>
+          </tr>
+          <tr>
+               <td><code>__CLASS__</code></td>
+               <td>Returns the class name</td>
+          </tr>
+          <tr>
+               <td><code>__TRAIT__</code></td>
+               <td>Returns the trait name</td>
+          </tr>
+          <tr>
+               <td><code>__METHOD__</code></td>
+               <td>Returns the class method name</td>
+          </tr>
+          <tr>
+               <td><code>__NAMESPACE__</code></td>
+               <td>Returns the name of the current namespace</td>
+          </tr>
+     </tbody>
+</table>
+<h1 id="sessions-in-php">Sessions in PHP</h1>
+<ul>
+     <li>A session is a way to store information (in variables) to be used across multiple pages.</li>
+     <li>By default, session variables last until the user closes the browser.</li>
+     <li>Session variables hold information about one single user, and are available to all pages in one application.
+     </li>
+     <li>The PHP session variables are stored on the server, and not on the user&#39;s computer.</li>
+     <li>The PHP session variables are available to all pages on the site.</li>
+</ul>
+<h1 id="php-session-functions">PHP Session Functions</h1>
+<ul>
+     <li>The following table lists some of the most commonly used session functions in PHP.</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Function</th>
+               <th>Description</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td><code>session\_name()</code></td>
+               <td>Sets the session name</td>
+          </tr>
+          <tr>
+               <td><code>session\_module\_name()</code></td>
+               <td>Sets the session module name</td>
+          </tr>
+          <tr>
+               <td><code>session\_save\_path()</code></td>
+               <td>Sets the session save path</td>
+          </tr>
+          <tr>
+               <td><code>session\_set\_save\_handler()</code></td>
+               <td>Sets the session save handler</td>
+          </tr>
+          <tr>
+               <td><code>session\_id()</code></td>
+               <td>Sets the session ID</td>
+          </tr>
+          <tr>
+               <td><code>session\_regenerate\_id()</code></td>
+               <td>Regenerates the session ID</td>
+          </tr>
+          <tr>
+               <td><code>session\_cache\_limiter()</code></td>
+               <td>Sets the session cache limiter</td>
+          </tr>
+          <tr>
+               <td><code>session\_cache\_expire()</code></td>
+               <td>Sets the session cache expire</td>
+          </tr>
+          <tr>
+               <td><code>session\_set\_cookie\_params()</code></td>
+               <td>Sets the session cookie parameters</td>
+          </tr>
+          <tr>
+               <td><code>session\_start()</code></td>
+               <td>Starts a new session or resumes a session</td>
+          </tr>
+          <tr>
+               <td><code>session\_destroy()</code></td>
+               <td>Destroys all data registered to a session</td>
+          </tr>
+          <tr>
+               <td><code>session\_unset()</code></td>
+               <td>Frees all session variables</td>
+          </tr>
+          <tr>
+               <td><code>session\_encode()</code></td>
+               <td>Encodes the current session data as a string</td>
+          </tr>
+          <tr>
+               <td><code>session\_decode()</code></td>
+               <td>Decodes session data from a string</td>
+          </tr>
+          <tr>
+               <td><code>session\_status()</code></td>
+               <td>Gets the current session status</td>
+          </tr>
+          <tr>
+               <td><code>session\_register\_shutdown()</code></td>
+               <td>Registers a shutdown function for a session</td>
+          </tr>
+          <tr>
+               <td><code>session\_register()</code></td>
+               <td>Registers one or more global variables with the current session</td>
+          </tr>
+          <tr>
+               <td><code>session\_unregister()</code></td>
+               <td>Removes a global variable from the current session</td>
+          </tr>
+          <tr>
+               <td><code>session\_is\_registered()</code></td>
+               <td>Checks if a global variable is registered in a session</td>
+          </tr>
+     </tbody>
+</table>
+<h1 id="cookies-in-php">Cookies in PHP</h1>
+<ul>
+     <li>A cookie is a small piece of data that is stored on the user&#39;s computer by the web browser while browsing a
+          website.</li>
+     <li>Cookies are created with the <code>setcookie()</code> function.</li>
+     <li>Cookies are used to identify users.</li>
+     <li>Cookies are also used to store user preferences and other information.</li>
+     <li>The <code>$_COOKIE</code> superglobal variable is used to access cookies.</li>
+     <li>The following table lists some of the most commonly used cookie functions in PHP.</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Function</th>
+               <th>Description</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td><code>setcookie()</code></td>
+               <td>Sets a cookie</td>
+          </tr>
+          <tr>
+               <td><code>setrawcookie()</code></td>
+               <td>Sets a cookie</td>
+          </tr>
+          <tr>
+               <td><code>header()</code></td>
+               <td>Sends a raw HTTP header</td>
+          </tr>
+     </tbody>
+</table>
+<h1 id="file-handling-in-php">File Handling in PHP</h1>
+<ul>
+     <li>PHP has a number of functions for handling files.</li>
+     <li>The following table lists some of the most commonly used file handling functions in PHP.</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Function</th>
+               <th>Description</th>
+               <th>Example</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td><code>fopen()</code></td>
+               <td>Opens a file</td>
+               <td><code>echo fopen(&quot;test.txt&quot;, &quot;r&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>fclose()</code></td>
+               <td>Closes an open file</td>
+               <td><code>echo fclose($file);</code></td>
+          </tr>
+          <tr>
+               <td><code>feof()</code></td>
+               <td>Tests for end-of-file on a file pointer</td>
+               <td><code>echo feof($file);</code></td>
+          </tr>
+          <tr>
+               <td><code>fgetc()</code></td>
+               <td>Gets character from file pointer</td>
+               <td><code>echo fgetc($file);</code></td>
+          </tr>
+          <tr>
+               <td><code>fgets()</code></td>
+               <td>Gets line from file pointer</td>
+               <td><code>echo fgets($file);</code></td>
+          </tr>
+          <tr>
+               <td><code>fgetss()</code></td>
+               <td>Gets line from file pointer and strip HTML tags</td>
+               <td><code>echo fgetss($file);</code></td>
+          </tr>
+          <tr>
+               <td><code>fread()</code></td>
+               <td>Binary-safe file read</td>
+               <td><code>echo fread($file, 10);</code></td>
+          </tr>
+          <tr>
+               <td><code>fscanf()</code></td>
+               <td>Parses input from a file according to a format</td>
+               <td><code>echo fscanf($file, &quot;%s %s %s&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>fseek()</code></td>
+               <td>Seeks on a file pointer</td>
+               <td><code>echo fseek($file, 10);</code></td>
+          </tr>
+          <tr>
+               <td><code>fstat()</code></td>
+               <td>Gives information about a file</td>
+               <td><code>echo fstat($file);</code></td>
+          </tr>
+          <tr>
+               <td><code>ftell()</code></td>
+               <td>Returns the current position of the file read/write pointer</td>
+               <td><code>echo ftell($file);</code></td>
+          </tr>
+          <tr>
+               <td><code>rewind()</code></td>
+               <td>Rewinds the position of a file pointer</td>
+               <td><code>echo rewind($file);</code></td>
+          </tr>
+          <tr>
+               <td><code>fwrite()</code></td>
+               <td>Binary-safe file write</td>
+               <td><code>echo fwrite($file, &quot;Hello World&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>fputcsv()</code></td>
+               <td>Format line as CSV and write to file pointer</td>
+               <td><code>echo fputcsv($file, array(&quot;Hello&quot;, &quot;World&quot;));</code></td>
+          </tr>
+          <tr>
+               <td><code>fgetcsv()</code></td>
+               <td>Gets line from file pointer and parse for CSV fields</td>
+               <td><code>echo fgetcsv($file);</code></td>
+          </tr>
+          <tr>
+               <td><code>fpassthru()</code></td>
+               <td>Output all remaining data on a file pointer</td>
+               <td><code>echo fpassthru($file);</code></td>
+          </tr>
+          <tr>
+               <td><code>ftruncate()</code></td>
+               <td>Truncates a file to a given length</td>
+               <td><code>echo ftruncate($file, 10);</code></td>
+          </tr>
+          <tr>
+               <td><code>fflush()</code></td>
+               <td>Flushes the output to a file</td>
+               <td><code>echo fflush($file);</code></td>
+          </tr>
+          <tr>
+               <td><code>file()</code></td>
+               <td>Reads entire file into an array</td>
+               <td><code>echo file(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>file_get_contents()</code></td>
+               <td>Reads entire file into a string</td>
+               <td><code>echo file_get_contents(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>file_put_contents()</code></td>
+               <td>Write a string to a file</td>
+               <td><code>echo file_put_contents(&quot;test.txt&quot;, &quot;Hello World&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>readfile()</code></td>
+               <td>Outputs a file</td>
+               <td><code>echo readfile(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>copy()</code></td>
+               <td>Copies file</td>
+               <td><code>echo copy(&quot;test.txt&quot;, &quot;test2.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>rename()</code></td>
+               <td>Renames a file or directory</td>
+               <td><code>echo rename(&quot;test.txt&quot;, &quot;test2.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>unlink()</code></td>
+               <td>Deletes a file</td>
+               <td><code>echo unlink(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>mkdir()</code></td>
+               <td>Makes directory</td>
+               <td><code>echo mkdir(&quot;test&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>rmdir()</code></td>
+               <td>Removes directory</td>
+               <td><code>echo rmdir(&quot;test&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>chdir()</code></td>
+               <td>Changes directory</td>
+               <td><code>echo chdir(&quot;test&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>getcwd()</code></td>
+               <td>Gets the current directory</td>
+               <td><code>echo getcwd();</code></td>
+          </tr>
+          <tr>
+               <td><code>opendir()</code></td>
+               <td>Opens directory</td>
+               <td><code>echo opendir(&quot;test&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>closedir()</code></td>
+               <td>Closes directory handle</td>
+               <td><code>echo closedir($dir);</code></td>
+          </tr>
+          <tr>
+               <td><code>readdir()</code></td>
+               <td>Reads directory</td>
+               <td><code>echo readdir($dir);</code></td>
+          </tr>
+          <tr>
+               <td><code>rewinddir()</code></td>
+               <td>Rewinds directory handle</td>
+               <td><code>echo rewinddir($dir);</code></td>
+          </tr>
+          <tr>
+               <td><code>scandir()</code></td>
+               <td>Lists files and directories inside the specified path</td>
+               <td><code>echo scandir(&quot;test&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>glob()</code></td>
+               <td>Finds pathnames matching a pattern</td>
+               <td><code>echo glob(&quot;test/*.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>tempnam()</code></td>
+               <td>Creates file with unique file name</td>
+               <td><code>echo tempnam(&quot;test&quot;, &quot;test&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>tmpfile()</code></td>
+               <td>Creates a temporary file</td>
+               <td><code>echo tmpfile();</code></td>
+          </tr>
+          <tr>
+               <td><code>fileatime()</code></td>
+               <td>Gets last access time of file</td>
+               <td><code>echo fileatime(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>filectime()</code></td>
+               <td>Gets inode change time of file</td>
+               <td><code>echo filectime(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>filegroup()</code></td>
+               <td>Gets file group</td>
+               <td><code>echo filegroup(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>fileinode()</code></td>
+               <td>Gets file inode</td>
+               <td><code>echo fileinode(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>filemtime()</code></td>
+               <td>Gets file modification time</td>
+               <td><code>echo filemtime(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>fileowner()</code></td>
+               <td>Gets file owner</td>
+               <td><code>echo fileowner(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>fileperms()</code></td>
+               <td>Gets file permissions</td>
+               <td><code>echo fileperms(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>filesize()</code></td>
+               <td>Gets file size</td>
+               <td><code>echo filesize(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>filetype()</code></td>
+               <td>Gets file type</td>
+               <td><code>echo filetype(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>file_exists()</code></td>
+               <td>Checks whether a file or directory exists</td>
+               <td><code>echo file_exists(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>is_dir()</code></td>
+               <td>Tells whether the filename is a directory</td>
+               <td><code>echo is_dir(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>is_executable()</code></td>
+               <td>Tells whether the filename is executable</td>
+               <td><code>echo is_executable(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>is_file()</code></td>
+               <td>Tells whether the filename is a regular file</td>
+               <td><code>echo is_file(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>is_link()</code></td>
+               <td>Tells whether the filename is a symbolic link</td>
+               <td><code>echo is_link(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>is_readable()</code></td>
+               <td>Tells whether a file exists and is readable</td>
+               <td><code>echo is_readable(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>is_uploaded_file()</code></td>
+               <td>Tells whether the file was uploaded via HTTP POST</td>
+               <td><code>echo is_uploaded_file(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>is_writable()</code></td>
+               <td>Tells whether the filename is writable</td>
+               <td><code>echo is_writable(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>is_writeable()</code></td>
+               <td>Alias of is_writable()</td>
+               <td><code>echo is_writeable(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>touch()</code></td>
+               <td>Sets access and modification time of file</td>
+               <td><code>echo touch(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>clearstatcache()</code></td>
+               <td>Clears file status cache</td>
+               <td><code>echo clearstatcache();</code></td>
+          </tr>
+          <tr>
+               <td><code>disk_total_space()</code></td>
+               <td>Returns the total size of a filesystem or disk partition</td>
+               <td><code>echo disk_total_space(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>disk_free_space()</code></td>
+               <td>Returns available space on filesystem or disk partition</td>
+               <td><code>echo disk_free_space(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>diskfreespace()</code></td>
+               <td>Alias of disk_free_space()</td>
+               <td><code>echo diskfreespace(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>realpath()</code></td>
+               <td>Returns canonicalized absolute pathname</td>
+               <td><code>echo realpath(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>pathinfo()</code></td>
+               <td>Returns information about a file path</td>
+               <td><code>echo pathinfo(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>fnmatch()</code></td>
+               <td>Match filename against a pattern</td>
+               <td><code>echo fnmatch(&quot;test.txt&quot;, &quot;*.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>fsockopen()</code></td>
+               <td>Open Internet or Unix domain socket connection</td>
+               <td><code>echo fsockopen(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>pfsockopen()</code></td>
+               <td>Open persistent Internet or Unix domain socket connection</td>
+               <td><code>echo pfsockopen(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>pack()</code></td>
+               <td>Pack data into binary string</td>
+               <td><code>echo pack(&quot;test.txt&quot;);</code></td>
+          </tr>
+          <tr>
+               <td><code>unpack()</code></td>
+               <td>Unpack data from binary string</td>
+               <td><code>echo unpack(&quot;test.txt&quot;);</code></td>
+          </tr>
+     </tbody>
+</table>
+<h4 id="file-open-and-read">File Open and read</h4>
+<h4 id="fopen-">fopen()</h4>
+<ul>
+     <li>it is used to open a file. It takes two parameters, the file name and the mode. </li>
+     <li>mode and description</li>
+</ul>
+<table>
+     <thead>
+          <tr>
+               <th>Mode</th>
+               <th>Description</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td>r</td>
+               <td>Open for reading only; place the file pointer at the beginning of the file.</td>
+          </tr>
+          <tr>
+               <td>r+</td>
+               <td>Open for reading and writing; place the file pointer at the beginning of the file.</td>
+          </tr>
+          <tr>
+               <td>w</td>
+               <td>Open for writing only; place the file pointer at the beginning of the file and truncate the file to
+                    zero length. If the file does not exist, attempt to create it.</td>
+          </tr>
+          <tr>
+               <td>w+</td>
+               <td>Open for reading and writing; place the file pointer at the beginning of the file and truncate the
+                    file to zero length. If the file does not exist, attempt to create it.</td>
+          </tr>
+          <tr>
+               <td>a</td>
+               <td>Open for writing only; place the file pointer at the end of the file. If the file does not exist,
+                    attempt to create it.</td>
+          </tr>
+          <tr>
+               <td>a+</td>
+               <td>Open for reading and writing; place the file pointer at the end of the file. If the file does not
+                    exist, attempt to create it.</td>
+          </tr>
+          <tr>
+               <td>x</td>
+               <td>Create and open for writing only; place the file pointer at the beginning of the file. If the file
+                    already exists, the fopen() call will fail by returning FALSE and generating an error of level
+                    E_WARNING. If the file does not exist, attempt to create it. This is equivalent to specifying O_EXCL
+               </td>
+               <td>O_CREAT flags for the underlying open(2) system call.</td>
+          </tr>
+          <tr>
+               <td>x+</td>
+               <td>Create and open for reading and writing; otherwise it has the same behavior as &#39;x&#39;.</td>
+          </tr>
+     </tbody>
+</table>
+<ul>
+     <li>example
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  $myfile = fopen(<span class="hljs-string">"test.txt"</span>, <span class="hljs-string">"r"</span>) <span class="hljs-keyword">or</span> <span class="hljs-keyword">die</span>(<span class="hljs-string">"Unable to open file!"</span>);
+  <span class="hljs-keyword">echo</span> fread($myfile,filesize(<span class="hljs-string">"test.txt"</span>));
+  fclose($myfile);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h4 id="fread-">fread()</h4>
+<ul>
+     <li>
+          <p>it is used to read a file. It takes two parameters, the file name and the length of the file.</p>
+     </li>
+     <li>
+          <p>example</p>
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  $myfile = fopen(<span class="hljs-string">"test.txt"</span>, <span class="hljs-string">"r"</span>) <span class="hljs-keyword">or</span> <span class="hljs-keyword">die</span>(<span class="hljs-string">"Unable to open file!"</span>);
+  <span class="hljs-keyword">echo</span> fread($myfile,filesize(<span class="hljs-string">"test.txt"</span>));
+  fclose($myfile);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h4 id="fgets-">fgets()</h4>
+<ul>
+     <li>
+          <p>it is used to read a file line by line. It takes two parameters, the file name and the length of the file.
+          </p>
+     </li>
+     <li>
+          <p>example</p>
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  $myfile = fopen(<span class="hljs-string">"test.txt"</span>, <span class="hljs-string">"r"</span>) <span class="hljs-keyword">or</span> <span class="hljs-keyword">die</span>(<span class="hljs-string">"Unable to open file!"</span>);
+  <span class="hljs-comment">// Output one line until end-of-file</span>
+  <span class="hljs-keyword">while</span>(!feof($myfile)) {
+    <span class="hljs-keyword">echo</span> fgets($myfile) . <span class="hljs-string">"&lt;br&gt;"</span>;
+  }
+  fclose($myfile);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h1 id="file-create-and-write">File Create and Write</h1>
+<h4 id="fwrite-">fwrite()</h4>
+<ul>
+     <li>
+          <p>it is used to write a file. It takes two parameters, the file name and the content of the file.</p>
+     </li>
+     <li>
+          <p>example</p>
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  $myfile = fopen(<span class="hljs-string">"test.txt"</span>, <span class="hljs-string">"w"</span>) <span class="hljs-keyword">or</span> <span class="hljs-keyword">die</span>(<span class="hljs-string">"Unable to open file!"</span>);
+  $txt = <span class="hljs-string">"John Doe\n"</span>;
+  fwrite($myfile, $txt);
+  $txt = <span class="hljs-string">"Jane Doe\n"</span>;
+  fwrite($myfile, $txt);
+  fclose($myfile);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h1 id="file-upload">FIle upload</h1>
+<h4 id="move_uploaded_file-">move_uploaded_file()</h4>
+<ul>
+     <li>
+          <p>it is used to upload a file. It takes two parameters, the file name and the destination of the file.</p>
+     </li>
+     <li>
+          <p>example</p>
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  $target_dir = <span class="hljs-string">"uploads/"</span>;
+  $target_file = $target_dir . basename($_FILES[<span class="hljs-string">"fileToUpload"</span>][<span class="hljs-string">"name"</span>]);
+  $uploadOk = <span class="hljs-number">1</span>;
+  $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+  <span class="hljs-comment">// Check if image file is a actual image or fake image</span>
+  <span class="hljs-keyword">if</span>(<span class="hljs-keyword">isset</span>($_POST[<span class="hljs-string">"submit"</span>])) {
+      $check = getimagesize($_FILES[<span class="hljs-string">"fileToUpload"</span>][<span class="hljs-string">"tmp_name"</span>]);
+      <span class="hljs-keyword">if</span>($check !== <span class="hljs-keyword">false</span>) {
+          <span class="hljs-keyword">echo</span> <span class="hljs-string">"File is an image - "</span> . $check[<span class="hljs-string">"mime"</span>] . <span class="hljs-string">"."</span>;
+          $uploadOk = <span class="hljs-number">1</span>;
+      } <span class="hljs-keyword">else</span> {
+          <span class="hljs-keyword">echo</span> <span class="hljs-string">"File is not an image."</span>;
+          $uploadOk = <span class="hljs-number">0</span>;
+      }
+  }
+  <span class="hljs-comment">// Check if file already exists</span>
+  <span class="hljs-keyword">if</span> (file_exists($target_file)) {
+      <span class="hljs-keyword">echo</span> <span class="hljs-string">"Sorry, file already exists."</span>;
+      $uploadOk = <span class="hljs-number">0</span>;
+  }
+  <span class="hljs-comment">// Check file size</span>
+  <span class="hljs-keyword">if</span> ($_FILES[<span class="hljs-string">"fileToUpload"</span>][<span class="hljs-string">"size"</span>] &gt; <span class="hljs-number">500000</span>) {
+      <span class="hljs-keyword">echo</span> <span class="hljs-string">"Sorry, your file is too large."</span>;
+      $uploadOk = <span class="hljs-number">0</span>;
+  }
+  <span class="hljs-comment">// Allow certain file formats</span>
+  <span class="hljs-keyword">if</span>($imageFileType != <span class="hljs-string">"jpg"</span> &amp;&amp; $imageFileType != <span class="hljs-string">"png"</span> &amp;&amp; $imageFileType != <span class="hljs-string">"jpeg"</span>
+  &amp;&amp; $imageFileType != <span class="hljs-string">"gif"</span> ) {
+      <span class="hljs-keyword">echo</span> <span class="hljs-string">"Sorry, only JPG, JPEG, PNG &amp; GIF files are allowed."</span>;
+      $uploadOk = <span class="hljs-number">0</span>;
+  }
+  <span class="hljs-comment">// Check if $uploadOk is set to 0 by an error</span>
+  <span class="hljs-keyword">if</span> ($uploadOk == <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">echo</span> <span class="hljs-string">"Sorry, your file was not uploaded."</span>;
+  <span class="hljs-comment">// if everything is ok, try to upload file</span>
+  } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">if</span> (move_uploaded_file($_FILES[<span class="hljs-string">"fileToUpload"</span>][<span class="hljs-string">"tmp_name"</span>], $target_file)) {
+          <span class="hljs-keyword">echo</span> <span class="hljs-string">"The file "</span>. basename( $_FILES[<span class="hljs-string">"fileToUpload"</span>][<span class="hljs-string">"name"</span>]). <span class="hljs-string">" has been uploaded."</span>;
+      } <span class="hljs-keyword">else</span> {
+          <span class="hljs-keyword">echo</span> <span class="hljs-string">"Sorry, there was an error uploading your file."</span>;
+      }
+  }
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h1 id="file-delete">File Delete</h1>
+<h4 id="unlink-">unlink()</h4>
+<ul>
+     <li>
+          <p>it is used to delete a file. It takes one parameter, the file name.</p>
+     </li>
+     <li>
+          <p>example</p>
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  $file = <span class="hljs-string">'test.txt'</span>;
+  <span class="hljs-keyword">if</span> (!unlink($file))
+  {
+      <span class="hljs-keyword">echo</span> (<span class="hljs-string">"Error deleting $file"</span>);
+  }
+  <span class="hljs-keyword">else</span>
+  {
+      <span class="hljs-keyword">echo</span> (<span class="hljs-string">"Deleted $file"</span>);
+  }
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h1 id="file-rename">File Rename</h1>
+<h4 id="rename-">rename()</h4>
+<ul>
+     <li>
+          <p>it is used to rename a file. It takes two parameters, the file name and the new name of the file.</p>
+     </li>
+     <li>
+          <p>example</p>
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  $oldname = <span class="hljs-string">"test.txt"</span>;
+  $newname = <span class="hljs-string">"test2.txt"</span>;
+  rename($oldname, $newname);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h1 id="sending-email-and-sms">Sending email and sms</h1>
+<h4 id="mail-">mail()</h4>
+<ul>
+     <li>
+          <p>it is used to send email. It takes four parameters, the email address, the subject, the message and the
+               header.</p>
+     </li>
+     <li>
+          <p>example</p>
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  $to = <span class="hljs-string">"
+  $subject = "</span>My subject<span class="hljs-string">";
+  $txt = "</span>Hello world!<span class="hljs-string">";
+  $headers = "</span>From:
+  mail($to,$subject,$txt,$headers);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h4 id="curl_init-">curl_init()</h4>
+<ul>
+     <li>
+          <p>it is used to send sms. It takes one parameter, the url.</p>
+     </li>
+     <li>
+          <p>example</p>
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  $curl = curl_init();
+  curl_setopt_array($curl, <span class="hljs-keyword">array</span>(
+    CURLOPT_URL =&gt; <span class="hljs-string">"https://www.fast2sms.com/dev/bulk?authorization=YOUR_API_KEY&amp;sender_id=FSTSMS&amp;message=YOUR_MESSAGE&amp;language=english&amp;route=p&amp;numbers=YOUR_MOBILE_NUMBER"</span>,
+    CURLOPT_RETURNTRANSFER =&gt; <span class="hljs-keyword">true</span>,
+    CURLOPT_ENCODING =&gt; <span class="hljs-string">""</span>,
+    CURLOPT_MAXREDIRS =&gt; <span class="hljs-number">10</span>,
+    CURLOPT_TIMEOUT =&gt; <span class="hljs-number">30</span>,
+    CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST =&gt; <span class="hljs-string">"GET"</span>,
+    CURLOPT_SSL_VERIFYHOST =&gt; <span class="hljs-number">0</span>,
+    CURLOPT_SSL_VERIFYPEER =&gt; <span class="hljs-number">0</span>,
+  ));
+  $response = curl_exec($curl);
+  $err = curl_error($curl);
+  curl_close($curl);
+  <span class="hljs-keyword">if</span> ($err) {
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">"cURL Error #:"</span> . $err;
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">echo</span> $response;
+  }
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h1 id="error-handling">Error Handling</h1>
+<h4 id="die-">die()</h4>
+<ul>
+     <li>
+          <p>it is used to display an error message and stop the execution of the script.</p>
+     </li>
+     <li>
+          <p>example</p>
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  $myfile = fopen(<span class="hljs-string">"test.txt"</span>, <span class="hljs-string">"r"</span>) <span class="hljs-keyword">or</span> <span class="hljs-keyword">die</span>(<span class="hljs-string">"Unable to open file!"</span>);
+  <span class="hljs-keyword">echo</span> fread($myfile,filesize(<span class="hljs-string">"test.txt"</span>));
+  fclose($myfile);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h4 id="error_log-">error_log()</h4>
+<ul>
+     <li>
+          <p>it is used to log errors. It takes two parameters, the error message and the destination of the log file.
+          </p>
+     </li>
+     <li>
+          <p>example</p>
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  error_log(<span class="hljs-string">"Hello, errors!"</span>, <span class="hljs-number">3</span>, <span class="hljs-string">"/var/tmp/php.log"</span>);
+
+  <span class="hljs-comment">// or</span>
+
+  ini_set(<span class="hljs-string">"error_log"</span>, <span class="hljs-string">"/var/tmp/php.log"</span>);
+  error_log(<span class="hljs-string">"Hello, errors!"</span>);
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h1 id="opps-in-php">OPPs in PHP</h1>
+<h4 id="class">class</h4>
+<ul>
+     <li>
+          <p>it is used to create a class. It takes one parameter, the class name.</p>
+     </li>
+     <li>
+          <p>example</p>
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+      <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Car</span><span class="hljs-params">()</span> </span>{
+          <span class="hljs-keyword">$this</span>-&gt;model = <span class="hljs-string">"VW"</span>;
+      }
+  }
+  <span class="hljs-comment">// create an object</span>
+  $herbie = <span class="hljs-keyword">new</span> Car();
+  <span class="hljs-comment">// show object properties</span>
+  <span class="hljs-keyword">echo</span> $herbie-&gt;model;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h4 id="public">public</h4>
+<ul>
+     <li>
+          <p>it is used to create a public property or method. It takes one parameter, the property or method name.</p>
+     </li>
+     <li>
+          <p>example</p>
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+      <span class="hljs-keyword">public</span> $model;
+      <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">($model)</span> </span>{
+          <span class="hljs-keyword">$this</span>-&gt;model = $model;
+      }
+  }
+  <span class="hljs-comment">// create an object</span>
+  $herbie = <span class="hljs-keyword">new</span> Car(<span class="hljs-string">"Herbie"</span>);
+  <span class="hljs-comment">// show object properties</span>
+  <span class="hljs-keyword">echo</span> $herbie-&gt;model;
+
+  <span class="hljs-comment">// or</span>
+
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+      <span class="hljs-keyword">public</span> $model;
+      <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setModel</span><span class="hljs-params">($model)</span> </span>{
+          <span class="hljs-keyword">$this</span>-&gt;model = $model;
+      }
+  }
+
+  <span class="hljs-comment">// create an object</span>
+  $herbie = <span class="hljs-keyword">new</span> Car();
+  <span class="hljs-comment">// set the value of the class' property.</span>
+  <span class="hljs-comment">// for this aim, we use a method that we created in the class</span>
+  $herbie-&gt;setModel(<span class="hljs-string">"Herbie"</span>);
+  <span class="hljs-comment">// show object properties</span>
+  <span class="hljs-keyword">echo</span> $herbie-&gt;model;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h4 id="private">private</h4>
+<ul>
+     <li>
+          <p>it is used to create a private property or method. It takes one parameter, the property or method name.</p>
+     </li>
+     <li>
+          <p>example</p>
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+      <span class="hljs-keyword">private</span> $model;
+      <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setModel</span><span class="hljs-params">($model)</span> </span>{
+          <span class="hljs-keyword">$this</span>-&gt;model = $model;
+      }
+  }
+
+  <span class="hljs-comment">// create an object</span>
+  $herbie = <span class="hljs-keyword">new</span> Car();
+  <span class="hljs-comment">// set the value of the class' property.</span>
+  <span class="hljs-comment">// for this aim, we use a method that we created in the class</span>
+  $herbie-&gt;setModel(<span class="hljs-string">"Herbie"</span>);
+  <span class="hljs-comment">// show object properties</span>
+  <span class="hljs-keyword">echo</span> $herbie-&gt;model;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h4 id="protected">protected</h4>
+<ul>
+     <li>
+          <p>it is used to create a protected property or method. It takes one parameter, the property or method name.
+          </p>
+     </li>
+     <li>
+          <p>example</p>
+          <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+      <span class="hljs-keyword">protected</span> $model;
+      <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setModel</span><span class="hljs-params">($model)</span> </span>{
+          <span class="hljs-keyword">$this</span>-&gt;model = $model;
+      }
+  }
+
+  <span class="hljs-comment">// create an object</span>
+  $herbie = <span class="hljs-keyword">new</span> Car();
+  <span class="hljs-comment">// set the value of the class' property.</span>
+  <span class="hljs-comment">// for this aim, we use a method that we created in the class</span>
+  $herbie-&gt;setModel(<span class="hljs-string">"Herbie"</span>);
+  <span class="hljs-comment">// show object properties</span>
+  <span class="hljs-keyword">echo</span> $herbie-&gt;model;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+     </li>
+</ul>
+<h1 id="php-oop">PHP OOP</h1>
+<ul>
+     <li>PHP is an object-oriented programming language.</li>
+     <li>OOP is a programming paradigm based on the concept of &quot;objects&quot;, which can contain data and code:
+          data in the form of fields (often known as attributes or properties), and code, in the form of procedures
+          (often known as methods).</li>
+     <li>A feature of objects is that an object&#39;s procedures can access and often modify the data fields of the
+          object with which they are associated (objects have a notion of &quot;this&quot; or &quot;self&quot;).</li>
+     <li>In OOP, computer programs are designed by making them out of objects that interact with one another.</li>
+     <li>OOP languages are diverse, but the most popular ones are class-based, meaning that objects are instances of
+          classes, which also determine their types.</li>
+     <li>PHP is a multi-paradigm language, meaning it supports procedural programming, object-oriented programming, and
+          functional programming.</li>
+</ul>
+<h4 id="class">Class</h4>
+<ul>
+     <li>A class is a template for objects, and is used to create new objects.</li>
+     <li>Syntax:
+          <pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassName</span> </span>{
+<span class="hljs-comment">// Properties and methods goes here</span>
+}
+</code></pre>
+     </li>
+     <li>
+          <p>Example:</p>
+          <pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+<span class="hljs-comment">// Properties</span>
+<span class="hljs-keyword">public</span> $name;
+<span class="hljs-keyword">public</span> $color;
+
+<span class="hljs-comment">// Methods</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">set_name</span><span class="hljs-params">($name)</span> </span>{
+  <span class="hljs-keyword">$this</span>-&gt;name = $name;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">get_name</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">$this</span>-&gt;name;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">set_color</span><span class="hljs-params">($color)</span> </span>{
+  <span class="hljs-keyword">$this</span>-&gt;color = $color;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">get_color</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">$this</span>-&gt;color;
+}
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="object">Object</h4>
+<ul>
+     <li>An object is an instance of a class.</li>
+     <li>Syntax:
+          <pre><code class="lang-php">$<span class="hljs-class"><span class="hljs-keyword">object</span> </span>= <span class="hljs-keyword">new</span> <span class="hljs-type">ClassName</span>();
+</code></pre>
+     </li>
+     <li>Example:
+          <pre><code class="lang-php"><span class="hljs-built_in">$herbie</span> = <span class="hljs-keyword">new</span> Car()<span class="hljs-comment">;</span>
+</code></pre>
+     </li>
+</ul>
+<h4 id="constructor">Constructor</h4>
+<ul>
+     <li>A constructor is a special method that is called when an object is created.</li>
+     <li>Syntax:
+          <pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassName</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// Code that runs when an object is created</span>
+}
+}
+</code></pre>
+     </li>
+     <li>Example:
+          <pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">"I am a car!"</span>;
+}
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="inheritance">Inheritance</h4>
+<ul>
+     <li>Inheritance is when a class inherits the properties and methods from another class.</li>
+     <li>Syntax:
+          <pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassName</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AnotherClass</span> </span>{
+<span class="hljs-comment">// Properties and methods goes here</span>
+}
+</code></pre>
+     </li>
+     <li>Example:
+          <pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SportsCar</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Car</span> </span>{
+<span class="hljs-comment">// Properties and methods goes here</span>
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="access-modifiers">Access Modifiers</h4>
+<ul>
+     <li>Access modifiers are used to set the accessibility of properties and methods.</li>
+     <li>There are three access modifiers: public, protected, and private.</li>
+     <li>Public: The property or method can be accessed from everywhere. This is default</li>
+     <li>Protected: The property or method can be accessed within the class and by classes derived from that class.</li>
+     <li>Private: The property or method can ONLY be accessed within the class.</li>
+</ul>
+<h4 id="static-keyword">Static Keyword</h4>
+<ul>
+     <li>The static keyword is used to declare a static property or method.</li>
+     <li>A static property or method can be accessed directly - without creating an instance of the class first.</li>
+     <li>Syntax:
+          <pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassName</span> </span>{
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> $static_property = <span class="hljs-string">"I am a static property"</span>;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">static_method</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">"I am a static method"</span>;
+}
+}
+</code></pre>
+     </li>
+     <li>Example:
+          <pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> $name = <span class="hljs-string">"Herbie"</span>;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hello</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">"Hello World!"</span>;
+}
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="abstract-class">Abstract Class</h4>
+<ul>
+     <li>An abstract class is a class that is declared abstract - it may contain abstract methods as well as methods
+          with an implementation.</li>
+     <li>Syntax:
+          <pre><code class="lang-php"><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassName</span> {</span>
+// <span class="hljs-keyword">Abstract</span> methods <span class="hljs-literal">and</span> properties
+}
+</code></pre>
+     </li>
+     <li>Example:
+          <pre><code class="lang-php"><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> {</span>
+// <span class="hljs-keyword">Abstract</span> methods <span class="hljs-literal">and</span> properties
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="interface">Interface</h4>
+<ul>
+     <li>An interface is a list of methods that a class must implement.</li>
+     <li>Syntax:
+          <pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">InterfaceName</span> {</span>
+// <span class="hljs-function"><span class="hljs-keyword">Method</span> <span class="hljs-title">signatures</span></span>
+}
+</code></pre>
+     </li>
+     <li>Example:
+          <pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Car</span> {</span>
+// <span class="hljs-function"><span class="hljs-keyword">Method</span> <span class="hljs-title">signatures</span></span>
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="trait">Trait</h4>
+<ul>
+     <li>A trait is a mechanism for code reuse in single inheritance languages such as PHP.</li>
+     <li>A Trait is intended to reduce some limitations of single inheritance by enabling a developer to reuse sets of
+          methods freely in several independent classes living in different class hierarchies.</li>
+     <li>The semantics of the combination of Traits and classes is defined in a way which reduces complexity, and avoids
+          the typical problems associated with multiple inheritance and Mixins.</li>
+     <li>Syntax:
+          <pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">TraitName</span> {</span>
+<span class="hljs-comment">// Properties and methods</span>
+}
+</code></pre>
+     </li>
+     <li>Example:
+          <pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Car</span> {</span>
+<span class="hljs-comment">// Properties and methods</span>
+}
+</code></pre>
+     </li>
+</ul>
+<h4 id="magic-methods">Magic Methods</h4>
+<ul>
+     <li>Magic methods are special methods that are called automatically when a certain action occurs on an object.</li>
+     <li>Syntax:
+          <pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassName</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// Code that runs when an object is created</span>
+}
+}
+</code></pre>
+     </li>
+     <li>Example:
+          <pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">echo</span> <span class="hljs-string">"I am a car!"</span>;
+}
+}
+</code></pre>
+     </li>
+</ul>

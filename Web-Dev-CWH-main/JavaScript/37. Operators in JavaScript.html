@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Operators in JavaScript</title>
+</head>
+<body>
+     <script>
+          // Arithmetic Operators
+          console.log("------------Assignment Operators-------------");
+          var a=10;
+          var b=5;
+          console.log("Sum of "+a+" and "+b+" is "+(a+b));
+          console.log("Difference of "+a+" and "+b+" is "+(a-b));
+          console.log("Product of "+a+" and "+b+" is "+(a*b));
+          console.log("Division of "+a+" and "+b+" is "+(a/b));
+          console.log("Modulus of "+a+" and "+b+" is "+(a%b));
+          console.log("Increment of "+a+" is "+(++a));
+          console.log("Decrement of "+a+" is "+(--a));
+
+          // Assignment Operators
+          console.log("------------Assignment Operators-------------");
+          var c=10;
+          var d=5;
+          console.log("Sum of "+c+" and "+d+" is "+(c+=d));
+          console.log("Difference of "+c+" and "+d+" is "+(c-=d));
+          console.log("Product of "+c+" and "+d+" is "+(c*=d));
+          console.log("Division of "+c+" and "+d+" is "+(c/=d));
+          console.log("Modulus of "+c+" and "+d+" is "+(c%=d));
+
+          // Comparison Operators
+          console.log("------------Comparison Operators-------------");
+          var e=10;
+          var f=5;
+          console.log("Is "+e+" greater than "+f+"? "+(e>f));
+          console.log("Is "+e+" less than "+f+"? "+(e<f));
+          console.log("Is "+e+" greater than or equal to "+f+"? "+(e>=f));
+          console.log("Is "+e+" less than or equal to "+f+"? "+(e<=f));
+          console.log("Is "+e+" equal to "+f+"? "+(e==f));
+          console.log("Is "+e+" not equal to "+f+"? "+(e!=f));
+
+          // Logical Operators
+          console.log("------------Logical Operators-------------");
+          var g=10;
+          var h=5;
+          console.log("Is "+g+" greater than "+h+" and "+g+" is greater than 5? "+(g>h && g>5));
+          console.log("Is "+g+" greater than "+h+" or "+g+" is greater than 5? "+(g>h || g>5));
+          console.log("Is "+g+" not equal to "+h+"? "+!(g!=h));
+
+          // Bitwise Operators
+          console.log("------------Bitwise Operators-------------");
+          var i=10;
+          var j=5;
+          console.log("Bitwise AND of "+i+" and "+j+" is "+(i&j));
+          console.log("Bitwise OR of "+i+" and "+j+" is "+(i|j));
+          console.log("Bitwise XOR of "+i+" and "+j+" is "+(i^j));
+          console.log("Bitwise NOT of "+i+" is "+(~i));
+          console.log("Bitwise Left Shift of "+i+" is "+(i<<1));
+          console.log("Bitwise Right Shift of "+i+" is "+(i>>1));
+          console.log("Bitwise Zero Fill Right Shift of "+i+" is "+(i>>>1));
+
+          // Ternary Operators
+          console.log("------------Ternary Operators-------------");
+          var k=10;
+          var l=5;
+          console.log("Is "+k+" greater than "+l+"? "+((k>l)?"Yes":"No"));
+
+          // String Operators
+          console.log("------------String Operators-------------");
+          var m="Hello";
+          var n="World";
+          console.log("Concatenation of "+m+" and "+n+" is "+(m+n));
+          console.log("Length of "+m+" is "+(m.length));
+          console.log("Index of 'l' in "+m+" is "+(m.indexOf("l")));
+          console.log("Last Index of 'l' in "+m+" is "+(m.lastIndexOf("l")));
+          
+          
+     </script>
+
+     
+</body>
+</html>

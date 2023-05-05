@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+
+    }
+
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      color: white;
+    }
+
+    .container {
+      width: 900px;
+      border: 3px solid purple;
+      margin: auto;
+
+    }
+
+    .computer {
+      float: left;
+      width: 47%;
+    }
+
+    .fruits {
+      float: right;
+      width: 47%;
+    }
+
+    .vegetables {
+      clear: both;
+    }
+
+    .computer,.fruits,.vegetables {
+      border: 3px solid black;
+      margin: 12px;
+      padding: 12px 3px;
+      background-color: rgb(219, 135, 38);
+    }
+    h1{
+      color: blue;
+    }
+  </style>
+  <title>Float and Clear</title>
+</head>
+
+<body>
+  <h1>15. Float and Clear</h1>
+  <!-- Float and Clear are used to make the elements float around the page.
+  Float is used to make the element float to the left or right of the page.
+  Clear is used to clear the float. -->
+
+  <div class="container">
+    <div class="computer">
+      <h3 id="computer">Computer</h3>
+      <p>Computer is an electronic device that is designed to work with Information. It can store, retrieve, and process
+        data. The first electronic digital computer was developed at the University of Pennsylvania in 1946. Since then,
+        computer technology has rapidly developed, and it is now used in every field.</p>
+    </div>
+
+    <div class="fruits">
+      <h3 id="fruits">Fruits</h3>
+      <p>Fruits are the sweet and pulpy part of a plant that contains seeds. Fruits are the most important source of
+        vitamins and minerals. They are also a good source of fiber. Fruits are available in different colors, shapes,
+        and sizes. They are eaten raw or cooked.</p>
+    </div>
+
+    <div class="vegetables">
+      <h3 id="vegetables">Vegetables</h3>
+      <p>Vegetables are the edible parts of a plant that is used in cooking. They are rich in vitamins, minerals, and
+        fiber. They are also low in calories. Vegetables are available in different colors, shapes, and sizes. They are
+        eaten raw or cooked.</p>
+    </div>
+  </div>
+</body>
+
+</html>

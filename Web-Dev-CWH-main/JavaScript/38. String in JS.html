@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>String in JS</title>
+</head>
+<body>
+     
+     <script>
+          // String in JS
+          var name="Sunny Sahsi";
+          var title="Gupta";
+          console.log(`My Full name is ${name} ${title}`);
+
+          console.log(name);
+          console.log("Type of: "+typeof name);
+          console.log("Length of name: "+name.length);
+          console.log("Index of 'S': "+name.indexOf('S'));
+          console.log("Index of 'S' from 2nd index: "+name.indexOf('S',2));
+
+          console.log("Last Index of 'S': "+name.lastIndexOf('S'));
+          console.log("Last Index of 'S' from 2nd index: "+name.lastIndexOf('S',2));
+
+          console.log("Char at 2nd index: "+name.charAt(2));
+          console.log("Char code at 2nd index: "+name.charCodeAt(2));
+
+          console.log("Sub String from 2nd index: "+name.substring(2));
+          console.log("Sub String from 2nd index to 5th index: "+name.substring(2,5));
+
+          console.log("Slice from 2nd index: "+name.slice(2));
+          console.log("Slice from 2nd index to 5th index: "+name.slice(2,5));
+
+          console.log("Slice from 2nd index: "+name.slice(-2));
+          console.log("Slice from 2nd index to 5th index: "+name.slice(-2,-5));
+
+          console.log("Split: "+name.split(' '));
+          console.log("Split: "+name.split(''));
+
+          console.log("Replace: "+name.replace('S','s'));
+          console.log("Replace: "+name.replace(/S/g,'s'));
+
+          console.log("To Upper Case: "+name.toUpperCase());
+          console.log("To Lower Case: "+name.toLowerCase());
+
+          console.log("Trim: "+name.trim());
+
+          console.log("Concat: "+name.concat(' ',title));
+
+          console.log("Includes: "+name.includes('S'));
+          console.log("Includes: "+name.includes('s'));
+
+          console.log("Starts With: "+name.startsWith('S'));
+          console.log("Starts With: "+name.startsWith('s'));
+
+          console.log("Ends With: "+name.endsWith('S'));
+          console.log("Ends With: "+name.endsWith('s'));
+
+          console.log("Repeat: "+name.repeat(3));
+
+          console.log("Pad Start: "+name.padStart(20,'*'));
+          console.log("Pad End: "+name.padEnd(20,'*'));
+          
+     </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Animations and Keyframes</title>
+     <style>
+          :root {
+               --primary-color: #ff0000;
+               --secondary-color: #00ff00;
+               --tertiary-color: #0000ff;
+          }
+
+          .box {
+               width: 300px;
+               height: 300px;
+               background-color: var(--primary-color);
+               margin: 10px;
+               border-radius: 10px;
+               display: flex;
+               margin: auto;
+               border: var(--secondary-color) 5px solid;
+               color: white;
+               font-size: 3em;
+               align-items: center;
+               justify-content: center;
+               animation: myanim 2s infinite;
+
+               /* Animation properties */
+               /* animation-name: xpro;
+               animation-duration: 3s;
+               animation-iteration-count: infinite;
+               animation-direction: alternate;
+               animation-timing-function: ease-in-out;
+               animation-delay: 1s; */
+
+               /* Animation in shorthand */
+               animation: xpro 3s infinite alternate ease-in-out 1s;
+
+          }
+
+          @keyframes xpro {
+               0% {
+                    background-color: var(--primary-color);
+               }
+
+               50% {
+                    background-color: var(--secondary-color);
+                    color: black;
+               }
+
+               100% {
+                    background-color: var(--tertiary-color);
+               }
+          }
+     </style>
+</head>
+
+<body>
+     <div class="main">
+          <div class="box">Sunny Sahsi</div>
+     </div>
+
+</body>
+
+</html>

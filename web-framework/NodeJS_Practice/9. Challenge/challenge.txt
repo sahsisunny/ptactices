@@ -1,0 +1,10 @@
+Small Chanllenge for me
+1. What happen if node_modules is deleted?
+2. Correct Way to push data on Git.
+
+1. Ans:- If node_modules is deleted then we have to install all the dependencies again. It will take time to install all the dependencies again. So, we have to avoid deleting node_modules.
+     Command to install all the dependencies:- npm install
+
+2. Ans:- We have to push only the code on git. We have to avoid pushing node_modules on git. So, we have to add node_modules in .gitignore file. So, node_modules will not be pushed on git.
+     Command to add node_modules in .gitignore file:- echo "node_modules" >> .gitignore 
+

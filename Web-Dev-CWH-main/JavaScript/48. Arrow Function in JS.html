@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Arrow Function in JS</title>
+</head>
+<body>
+     <div class="container">
+          <h1>Arrow Function in JS</h1>
+          <p id="para"></p>
+     </div>
+
+     <script>
+          // Arrow Function in JS
+          // Arrow Function is a short form of function in JS
+          // Arrow Function is also called as Lambda Function in Python
+
+          // Normal Function
+          function add(a, b) {
+               return a + b;
+          }
+
+          // Arrow Function
+          let add2 = (a, b) => {
+               return a + b;
+          }
+
+          // Arrow Function with single line
+          let add3 = (a, b) => a + b;
+
+          // Arrow Function with single parameter
+          let add4 = a => a + 5;
+
+          // Arrow Function with no parameter
+          let add5 = () => 5 + 5;
+          
+
+          // Calling the function
+          // document.getElementById('para').innerText = add(5, 5);      //Calling Normal Function
+          // document.getElementById('para').innerText = add2(5, 5);     //Calling Arrow Function
+          document.getElementById('para').innerText = add3(5, 5);     //Calling Arrow Function with single line
+          // document.getElementById('para').innerText = add4(5);        //Calling Arrow Function with single parameter
+          // document.getElementById('para').innerText = add5();         //Calling Arrow Function with no parameter
+
+
+
+          // Example 2
+          let obj = {
+               greeting: 'Good Morning',
+               names: ['Rahul', 'Raj', 'Ravi', 'Ramesh'],
+               speak(){
+                    this.names.forEach((name) => {
+                         console.log(`${this.greeting} ${name}`);
+                    });
+               }
+          }
+
+          obj.speak();
+
+
+     </script>
+</body>
+</html>

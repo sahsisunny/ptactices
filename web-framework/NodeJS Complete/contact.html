@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contact Us</title>
+     <style>
+          .contact-container {
+               max-width: 800px;
+               margin: 0 auto;
+               text-align: center;
+          }
+
+          form {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+          }
+
+          form label {
+               width: 100%;
+               text-align: left;
+               margin-bottom: 0.5em;
+          }
+
+          form input,
+          form textarea {
+               width: 50%;
+               padding: 0.5em;
+               border: 1px solid #ccc;
+               border-radius: 5px;
+               font-size: 1.2em;
+               margin-bottom: 1em;
+          }
+
+          form button {
+               width: 30%;
+               padding: 1em;
+               border: none;
+               border-radius: 5px;
+               background-color: #333;
+               color: white;
+               font-size: 1.2em;
+               cursor: pointer;
+          }
+
+          .contact-info {
+               margin-top: 2em;
+               text-align: left;
+          }
+
+          .contact-info h2 {
+               font-size: 1.5em;
+          }
+
+          .contact-info p {
+               font-size: 1.2em;
+               margin: 0;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="contact-container">
+          <h1>Contact Us</h1>
+          <p>Have a question or want to work with us? We'd love to hear from you!</p>
+          <form>
+               <label for="name">Name:</label><br>
+               <input type="text" id="name" name="name"><br>
+               <label for="email">Email:</label><br>
+               <input type="text" id="email" name="email"><br>
+               <label for="subject">Subject:</label><br>
+               <input type="text" id="subject" name="subject"><br>
+               <label for="message">Message:</label><br>
+               <textarea id="message" name="message"></textarea><br>
+               <button type="submit">Send</button>
+          </form>
+          <div class="contact-info">
+               <h2>Our Location</h2>
+               <p>123 Main Street</p>
+               <p>Anytown, USA 12345</p>
+               <h2>Contact Information</h2>
+               <p>Phone: 555-555-1212</p>
+               <p>Email: info@ourcompany.com</p>
+          </div>
+     </div>
+
+</body>
+
+</html>

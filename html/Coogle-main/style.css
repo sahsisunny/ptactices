@@ -1,0 +1,283 @@
+/* CSS Reset */
+* {
+     margin: 0;
+     padding: 0;
+}
+
+/* ----------------Variable--------------------- */
+:root {
+     --end-bg: #beb6b648;
+     --font: 'Poppins', sans-serif;
+}
+
+/* ------------------Body------------------------ */
+body {
+     font-family: var(--font);
+}
+
+/* ----------------Image Size--------------------- */
+/* navbar Image : grid */
+/* Searchbar Icon */
+#magnifier {
+     width: 20px;
+}
+
+#voice {
+     width: 20px;
+}
+
+/* ------------------Navbar----------------------- */
+#grid {
+     width: 20px;
+}
+
+#grid-li {
+     padding: 8px;
+}
+
+#grid-li:hover {
+     background-color: #b9b9b92b;
+     border-radius: 60px;
+     opacity: .9;
+}
+
+.navbar {
+     height: 60px;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     font-size: .85rem;
+}
+
+.navbar ul {
+     list-style: none;
+     display: flex;
+     align-items: center;
+     margin: 20px;
+}
+
+#navtext {
+     padding-left: 15px;
+     list-style: none;
+}
+
+#navtext:hover {
+     text-decoration: underline;
+}
+
+.forgrid {
+     margin-right: 10px;
+}
+
+#navtext {
+     text-decoration: none;
+     color: black;
+}
+
+#btn-signin {
+     text-decoration: none;
+     border: 2px solid #2875f0;
+     border-radius: 5px;
+     background-color: #2875f0;
+     color: white;
+     padding: 8px 25px;
+     margin-left: 10px;
+}
+
+#btn-signin:hover,
+#btn-signin:active {
+     background-color: #0e63ed;
+}
+
+/* ------------------Gooogle Logo----------------------- */
+.logo {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 15px;
+     ;
+}
+
+.logo img {
+     width: 25%;
+}
+
+/* ------------------Searchbar----------------------- */
+.searchbar {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 15px;
+}
+
+#sbar {
+     width: 45%;
+     height: 40px;
+     border: 1px solid #b9b9b9;
+     opacity: .5;
+     ;
+     border-radius: 20px;
+     padding-left: 40px;
+     padding-right: 45px;
+     font-size: 1rem;
+}
+
+#sbar:hover {
+     box-shadow: 0px 0px 2px 2px rgba(145, 140, 140, 0.666);
+}
+
+#magnifier {
+     position: relative;
+     left: 32px;
+     top: 2px;
+}
+
+#voice {
+     position: relative;
+     left: -35px;
+}
+
+/* ------------------Buttons----------------------- */
+.btns {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#btnss {
+     width: 10%;
+     height: 35px;
+     border: .01px solid #dddbdb34;
+     opacity: .9;
+     border-radius: 5px;
+     font-size: .8rem;
+     margin: 10px;
+}
+
+#btnss:hover {
+     box-shadow: 0px 0px .5px .5px rgba(145, 140, 140, 0.666);
+}
+
+#btnss:active {
+     border: .1px solid #0e63ed;
+}
+
+/* ------------------Language----------------------- */
+.lang {
+     height: 60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: .85rem;
+}
+
+.lang ul {
+     list-style: none;
+     display: flex;
+     align-items: center;
+     margin: 20px;
+}
+
+.lang ul li a {
+     list-style: none;
+     padding-left: 10px;
+     text-decoration: none;
+}
+
+.lang ul li a:hover {
+     text-decoration: underline;
+}
+
+#goffer {
+     opacity: .8;
+}
+
+/* ------------------Footer----------------------- */
+/* ------------------End 2----------------------- */
+.end2 {
+     background-color: var(--end-bg);
+     height: 44px;
+     display: flex;
+     justify-content: flex-start;
+     padding-left: 30px;
+     align-items: center;
+     font-size: .85rem;
+}
+
+.end2 a {
+     color: black;
+     text-decoration: none;
+     cursor: auto;
+}
+
+/* ------------------End 1----------------------- */
+.end1 {
+     background-color: var(--end-bg);
+     height: 44px;
+     display: flex;
+     padding-left: 10px;
+     justify-content: flex-start;
+     align-items: center;
+     font-size: .85rem;
+}
+
+footer {
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     opacity: .7;
+}
+
+.left {
+     margin: 10px;
+}
+
+.left ul {
+     list-style: none;
+     display: flex;
+}
+
+.left ul li {
+     margin: 10px;
+}
+
+.left ul li a {
+     text-decoration: none;
+     color: black;
+}
+
+.right {
+     float: right;
+     position: absolute;
+     top: 53px;
+     right: 20px;
+}
+
+.right ul {
+     list-style: none;
+     display: flex;
+     float: right;
+     left: 900px;
+}
+
+.right ul li {
+     margin: 10px;
+     text-decoration: none;
+}
+
+.right ul li a {
+     text-decoration: none;
+     color: black;
+}
+
+.end1 .left ul a:hover {
+     text-decoration: underline;
+}
+
+.end1 .right ul a:hover {
+     text-decoration: underline;
+}
+
+hr {
+     opacity: .6;
+}

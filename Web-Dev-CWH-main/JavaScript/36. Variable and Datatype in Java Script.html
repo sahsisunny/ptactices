@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Variable and Datatype in Java Script</title>
+</head>
+<body>
+     <script>
+          console.log("------------String-------------");
+          var name="Sunny Sahsi"; // String
+          console.log(name);
+          console.log(typeof name);
+          console.log("------------Number-------------");
+          var age=30; // Number
+          console.log(age);
+          console.log(typeof age);
+          console.log("------------Boolean-------------");
+          var isMarried=true; // Boolean
+          console.log(isMarried);
+          console.log(typeof isMarried);
+          console.log("------------Undefined-------------");
+          var car; // Undefined
+          console.log(car);
+          console.log(typeof car);
+          console.log("------------Null-------------");
+          var house=null; // Null
+          console.log(house);
+          console.log(typeof house);
+          console.log("------------Symbol-------------");
+          var sym=Symbol(); // Symbol
+          console.log(sym);
+          console.log(typeof sym);
+          console.log("------------Date-------------");
+          var today=new Date(); // Date
+          console.log(today);
+          console.log(typeof today);
+          console.log("------------Array-------------");
+          var arr=[1,2,3,4,5]; // Array
+          console.log(arr);
+          console.log(typeof arr);
+          console.log("------------Object-------------");
+          var person={ // Object
+               name:"Sunny Sahsi",
+               age:30
+          }
+          console.log(person);
+          console.log(typeof person);
+          console.log("------------Function-------------");
+          function add(a,b){ // Function
+               return a+b;
+          }
+          console.log(add);
+          console.log(typeof add);
+          console.log("------------Undefined-------------");
+          var x=undefined; // Undefined
+          console.log(x);
+          console.log(typeof x);
+          console.log("------------NaN-------------");
+          var y=NaN; // NaN
+          console.log(y);
+          console.log(typeof y);
+
+          // Variable in JavaScript
+           // Scoping
+
+          var String="Sunny Sahsi";
+          var String="Sunny Sahsi Gupta";    // Re-declare String value
+          console.log(String);
+
+          let str="MSI Laptop"
+          console.log(str)
+          {
+               let str="My New MSI Laptop" // Scope only in the block
+               console.log(str)
+
+          }
+          const PI=3.14;
+          {
+               const PI=3.14; // Cannot change const value but we can change in anothe block
+
+          }
+
+          console.log(PI);
+     </script>
+     
+</body>
+</html>

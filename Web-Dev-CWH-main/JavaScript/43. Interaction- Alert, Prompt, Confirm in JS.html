@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Interaction- Alert, Prompt, Confirm in JS</title>
+</head>
+<body>
+     <div class="container">
+          <!-- Interraction in JS -->
+          <h1>Interaction in JS</h1>
+
+     </div>
+     <script>
+          // Alert
+          alert("This is an alert box!");
+
+          // Prompt
+          let name = prompt("Enter your name", "Guest");
+          console.log(name);
+          
+          // Confirm
+          let confirmBox = confirm(`Your name is ${name} ?`);
+          console.log(confirmBox);
+          
+          // If-else
+          if (confirmBox == true) {
+               console.log("Your name is set successfully");
+          } else {
+               console.log("Your name is not set!");
+          }
+
+          onclick="this.style.background='red'"
+
+
+     </script>
+
+</body>
+</html>

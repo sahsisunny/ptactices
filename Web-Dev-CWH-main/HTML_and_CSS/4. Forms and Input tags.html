@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms and Input Tags</title>
+</head>
+
+<body>
+  <h1>Forms</h1>
+  <!-- Forms and Input tag-->
+  <form action="backend.php">
+    <div>
+      <label for="name">Name: </label>
+      <input type="text" name="name" id="name" placeholder="Enter your name">
+    </div>
+    <div>
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" placeholder="Enter your email">
+    </div>
+    <div>
+      <label for="password">Password: </label>
+      <input type="password" name="password" id="password" placeholder="Enter your password">
+    </div>
+    <div>
+      <label for="phone">Phone: </label>
+      <input type="tel" name="phone" id="phone" placeholder="Enter your phone">
+    </div>
+    <div>
+      <label for="dob">Date for Birth: </label>
+      <input type="date" name="dob" id="dob">
+    </div>
+    <div>
+      <label for="address">Address: </label><br>
+      <textarea name="myaddress" id="address" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+      <label for="uploadfile">Select files: </label>
+      <input type="file" name="uploadfile" id="uploadfile">
+    </div>
+    <div>
+      <label for="elgible">Are you eligible?</label>
+      <input type="checkbox" id="gender" name="myeligibility">
+    </div>
+    <div>
+      <label for="gender">Select Gender: </label>
+      Male<input type="radio" name="mygender" id="male" checked>
+      Female<input type="radio" name="mygender" id="female">
+    </div>
+    <div>
+      <label for="car">Car</label>
+
+      <select name="myCar" id="selectcar">
+        <option value="indica">Swift</option>
+        <option value="bmw">BMW</option>
+        <option value="tata">Tata Nano</option>
+      </select>
+
+    </div>
+    <div>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</body>
+
+</html>

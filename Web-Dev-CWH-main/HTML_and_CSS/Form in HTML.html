@@ -1,0 +1,85 @@
+<!-- All types of Form in HTML with css -->
+<html>
+
+<head>
+     <title>Form in HTML</title>
+     <style>
+          body {
+               background-color: #f2f2f2;
+          }
+
+          h1 {
+               text-align: center;
+          }
+
+          form {
+               width: 50%;
+               margin: 0 auto;
+               background-color: #fff;
+               padding: 20px;
+               border-radius: 10px;
+          }
+
+          label {
+               display: block;
+               margin: 10px 0;
+          }
+
+          input {
+               width: 100%;
+               padding: 5px;
+          }
+
+          input[type="submit"] {
+               width: 100%;
+               padding: 10px;
+               background-color: #333;
+               color: #fff;
+               border: none;
+          }
+     </style>
+</head>
+
+<body>
+     <h1>Form in HTML</h1>
+     <form action="https://www.google.com/search" method="get">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="Enter your password">
+          <label for="number">Number</label>
+          <input type="number" name="number" id="number" placeholder="Enter your number">
+          <label for="date">Date</label>
+          <input type="date" name="date" id="date" placeholder="Enter your date">
+          <label for="time">Time</label>
+          <input type="time" name="time" id="time" placeholder="Enter your time">
+          <label for="color">Color</label>
+          <input type="color" name="color" id="color" placeholder="Enter your color">
+          <label for="file">File</label>
+          <input type="file" name="file" id="file" placeholder="Enter your file">
+          <label for="range">Range</label>
+          <input type="range" name="range" id="range" placeholder="Enter your range">
+          <label for="url">URL</label>
+          <input type="url" name="url" id="url" placeholder="Enter your url">
+          <label for="tel">Tel</label>
+          <input type="tel" name="tel" id="tel" placeholder="Enter your tel">
+          <label for="search">Search</label>
+          <input type="search" name="search" id="search" placeholder="Enter your search">
+          <label for="month">Month</label>
+          <input type="month" name="month" id="month" placeholder="Enter your month">
+          <label for="week">Week</label>
+          <input type="week" name="week" id="week" placeholder="Enter your week">
+          <label for="datetime-local">Datetime-local</label>
+          <input type="datetime-local" name="datetime-local" id="datetime-local"
+               placeholder="Enter your datetime-local">
+          <label for="radio">Radio</label>
+          <input type="radio" name="radio" id="radio" placeholder="Enter your radio">
+          <label for="checkbox">Checkbox</label>
+          <input type="checkbox" name="checkbox" id="checkbox" placeholder="Enter your checkbox">
+          <label for="textarea">Textarea</label>
+          <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter your textarea"></textarea>
+          <input type="submit" value="Submit">
+     </form>
+</body>

@@ -1,0 +1,14 @@
+{
+  "name": "11.-simple-and-basic-api",
+  "version": "1.0.0",
+  "description": "for learn 11 videos of NODEJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Sunny Sahsi",
+  "license": "ISC"
+}

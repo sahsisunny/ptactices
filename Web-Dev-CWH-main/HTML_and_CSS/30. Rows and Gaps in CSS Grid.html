@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Rowa and gaps in CSS Grid</title>
+     <style>
+          .grid{
+               display: grid;
+               grid-template-rows: 1fr 5fr 1fr;
+               grid-template-columns: 1fr 5fr 1fr;
+               grid-auto-rows: 2fr;
+               grid-gap: 1rem;
+          }
+          .box{
+               background-color: rgb(117, 29, 29);
+               border: 1px solid black;
+               color: aqua;
+               padding: 20px;
+               font-size: 30px;
+               text-align: center;
+          }
+     </style>
+</head>
+<body>
+     <div class="grid">
+          <div class="box">This ia box- 1</div>
+          <div class="box">This ia box- 2</div>
+          <div class="box">This ia box- 3</div>
+          <div class="box">This ia box- 4</div>
+          <div class="box">This ia box- 5</div>
+          <div class="box">This ia box- 6</div>
+          <div class="box">This ia box- 7</div>
+          <div class="box">This ia box- 8</div>
+          <div class="box">This ia box- 9</div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* For Mobile  */
+.navbar {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.main-content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.about-content {
+     display: flex;
+     flex-direction: row;
+     align-items: column;
+     flex-wrap: wrap;
+     height: 292vh;
+}
+
+.journey-content {
+     display: flex;
+     flex-direction: row;
+     align-items: column;
+     flex-wrap: wrap;
+     height: 294vh;
+}
+
+.gallery-content {
+     display: flex;
+     flex-direction: row;
+     align-items: column;
+     flex-wrap: wrap;
+     height: 326vh;
+}
+
+.about-developer {
+     display: flex;
+     flex-direction: row;
+     align-items: column;
+     flex-wrap: wrap;
+
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+     
+}

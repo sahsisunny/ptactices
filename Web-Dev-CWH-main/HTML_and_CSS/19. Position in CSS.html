@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position in CSS</title>
+  <style>
+    .container {
+      background-color: #ec4b4b;
+      border: 2px solid #000; 
+    }
+    .box{
+      border: 2px solid rgb(12, 12, 12);
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin: 2px;
+    }
+    #box1{
+      position: static;
+    }
+    #box2{
+      position: relative;
+
+    }
+    #box3{
+      position: absolute;
+
+    }
+    #box4{
+      position: fixed;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>Position in CSS</h1>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+  </div>
+</body>
+</html>

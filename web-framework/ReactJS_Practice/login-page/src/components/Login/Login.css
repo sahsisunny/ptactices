@@ -1,0 +1,245 @@
+.login-section {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+
+}
+
+.login-card {
+     width: 65%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+.card,
+.left,
+.right {
+     width: 100%;
+     background: #e0e0e0;
+     box-shadow: 15px 15px 30px #bebebe,
+          -15px -15px 30px #ffffff;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.right {
+     border-radius: 0 1rem 1rem 0;
+     padding: 2rem;
+     justify-content: space-between;
+}
+
+h1 {
+     font-size: 2rem;
+     font-weight: 600;
+     margin-bottom: 1rem;
+}
+
+.input {
+     margin-bottom: 1rem;
+     width: 25rem;
+     border: none;
+     padding: 1rem 3rem;
+     border-radius: 1rem;
+     background-color: #e8e8e8;
+     font-size: medium;
+     font-weight: bold;
+     box-shadow: 6px 6px 12px #c5c5c5,
+          -6px -6px 12px #ffffff;
+}
+
+.input:focus {
+     outline: none;
+}
+
+button {
+     margin-top: 1rem;
+     width: 25rem;
+     color: #090909;
+     padding: 0.7em 1.7em;
+     font-size: 18px;
+     border-radius: 0.5em;
+     background: #e8e8e8;
+     border: none;
+     outline: none;
+     transition: all .3s;
+     box-shadow: 6px 6px 12px #c5c5c5,
+          -6px -6px 12px #ffffff;
+
+     /* animation: vibrate-2 2s linear infinite; */
+}
+
+button:hover {
+     background-color: #e0dada;
+     outline: none;
+     border: none;
+     cursor: pointer;
+}
+
+button:active {
+     box-shadow: 4px 4px 12px #c5c5c5,
+          -4px -4px 12px #ffffff;
+}
+
+.forget-pass {
+     margin-top: .8rem;
+     color: #090909;
+     text-decoration: none;
+}
+
+.forget-pass:hover {
+     color: #090909;
+     text-decoration: underline;
+}
+
+.left-side {
+     width: 100%;
+     height: 100%;
+     background: #e0e0e0;
+     box-shadow: 15px 15px 30px #bebebe,
+          -15px -15px 30px #ffffff;
+     position: relative;
+     display: flex;
+     place-content: center;
+     place-items: center;
+     overflow: hidden;
+     border-radius: 15px 0 0 15px;
+}
+
+.left-side h2 {
+     z-index: 1;
+     color: black;
+     font-size: 2em;
+}
+
+.left-side::before {
+     content: '';
+     position: absolute;
+     width: 200px;
+     background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0));
+     height: 200%;
+     animation: rotBGimg 8s linear infinite;
+     transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+     from {
+          transform: rotate(0deg);
+     }
+
+     to {
+          transform: rotate(360deg);
+     }
+}
+
+.left-side::after {
+     content: '';
+     position: absolute;
+     inset: 10px;
+     border-radius: 15px 0 0 15px;
+     background: #e0e0e0;
+}
+
+.anchor-tag {
+     width: 100%;
+     margin-top: 1rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around
+}
+
+
+svg {
+     position: relative;
+     left: 35px;
+
+}
+.eye{
+     position: relative;
+     left: 135px;
+}
+
+.login-button svg {
+     left: 10rem;
+}
+
+
+
+/* Media Qyery */
+@media screen and (max-width: 1100px) {
+     .left {
+          display: none;
+     }
+}
+
+
+
+
+/* Vibrate input box for 2 sec */
+@keyframes vibrate-2 {
+     0% {
+          transform: translate(1px, 1px) rotate(0deg);
+     }
+
+     10% {
+          transform: translate(-1px, -2px) rotate(-1deg);
+     }
+
+     20% {
+          transform: translate(-3px, 0px) rotate(1deg);
+     }
+
+     30% {
+          transform: translate(3px, 2px) rotate(0deg);
+     }
+
+     40% {
+          transform: translate(1px, -1px) rotate(1deg);
+     }
+
+     50% {
+          transform: translate(-1px, 2px) rotate(-1deg);
+     }
+
+     60% {
+          transform: translate(-3px, 1px) rotate(0deg);
+     }
+
+     70% {
+          transform: translate(3px, 1px) rotate(-1deg);
+     }
+
+     80% {
+          transform: translate(-1px, -1px) rotate(1deg);
+     }
+
+     90% {
+          transform: translate(1px, 2px) rotate(0deg);
+     }
+
+     100% {
+          transform: translate(1px, -2px) rotate(-1deg);
+     }
+}
+
+
+.validate-pass{
+     color: red;
+     font-size: .9rem;
+     font-weight: 550;
+     left: 50px;
+     position: relative;
+}
+
+
+.eye{
+     cursor: pointer;
+     position: relative;
+     left: 336px;
+     top: 40px;
+     font-size: 1.3rem;
+}

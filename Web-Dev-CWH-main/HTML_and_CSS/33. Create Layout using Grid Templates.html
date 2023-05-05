@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Create Layout using Grid Templates</title>
+     <style>
+          .main {
+               display: grid;
+               grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'content content content sidebar'
+                    'footer footer footer footer';
+               grid-gap: 1rem;
+          }
+
+          .item {
+               background-color: rgb(216, 103, 103);
+               padding: 1rem;
+               border: 2px solid black;
+          }
+
+          #navbar {
+               grid-area: navbar;
+          }
+
+          #content {
+               grid-area: content;
+          }
+
+          #sidebar {
+               grid-area: sidebar;
+          }
+
+          #footer {
+               grid-area: footer;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="main">
+          <div id="navbar" class="item">
+               Navbar
+          </div>
+          <div id="content" class="item">
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum enim quam odit quod rem modi, itaque maiores ea soluta sunt aspernatur? Itaque est quam placeat, ipsum quasi sit dignissimos cum consequuntur saepe facilis voluptas blanditiis quo deleniti excepturi magnam repudiandae nulla ipsa, nihil delectus molestias odit nobis. Consequatur, dignissimos odit temporibus, perferendis quas fugiat repellendus omnis voluptatibus expedita magnam ullam veritatis quaerat, repudiandae corrupti asperiores hic? A perferendis assumenda error perspiciatis voluptates quis! Eum molestiae voluptas qui reprehenderit provident illum a blanditiis porro dignissimos possimus animi iusto reiciendis nemo enim optio id nulla nihil autem necessitatibus, at minus. Accusamus quam vitae consectetur repellat blanditiis ipsa, sint exercitationem atque eius consequatur nobis. Mollitia perspiciatis officiis similique! Quibusdam reprehenderit eum reiciendis aut rem excepturi fugiat ad libero aliquid culpa sapiente iure quas facere beatae quaerat minus, sint molestiae minima repudiandae. Sapiente expedita pariatur libero vitae repudiandae saepe omnis eveniet accusantium placeat. Architecto, quisquam eveniet? Dolores, quaerat dolorem. Cupiditate in asperiores reprehenderit, hic magni amet est. Delectus totam veritatis maiores quidem, tenetur iste numquam maxime, minus beatae repellendus cumque pariatur voluptatibus molestias illum! Eaque, nihil? Vel saepe consequatur porro, placeat tempore veritatis voluptate, facilis, sunt molestias ut eligendi deleniti cum nam laborum. Harum.
+          </div>
+          <div id="sidebar" class="item">
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum aut illo veniam ipsum ratione voluptatibus, quas in provident obcaecati aspernatur reiciendis eaque perferendis labore. Sunt, voluptate ad cumque facilis repudiandae facere iure fuga quam, inventore sequi aperiam animi adipisci dolorem alias, quos laudantium quaerat! Rerum assumenda necessitatibus iste deserunt quos.
+          </div>
+          <div id="footer" class="item">
+               CopyRight 2021 Sahsi Sunny
+          </div>
+     </div>
+</body>
+
+</html>

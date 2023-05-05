@@ -1,0 +1,169 @@
+/* ====================| Contents |======================== */
+/* 0 Global
+/* 1 Navbar
+/* 2 Picture
+/* 3 About
+/* 4 Journey
+/* 5 Gallery
+/* 6 About Developer
+/* ====================| 0 Global |======================== */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+/* ====================| 1 Navbar |======================== */
+#logo {
+     width: 3rem;
+}
+
+.navbar {
+     background-color: aqua;
+     width: 100%;
+}
+
+.navbar nav ul {
+     display: flex;
+     position: relative;
+     align-items: center;
+}
+
+.navbar nav ul li {
+     margin: .3rem;
+     list-style: none;
+}
+
+ul li a {
+     text-decoration: none;
+     padding-left: 15px;
+     padding-right: 15px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-radius: 12px;
+     color: black;
+}
+
+ul li a:hover {
+     background-color: orange;
+     color: black;
+}
+
+/* ====================| 2 Picture |======================== */
+.main-content {
+     padding-top: 5px;
+     display: flex;
+     position: relative;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     height: 100vh;
+     background-color: orange;
+}
+
+.main-content p {
+     font-size: 1.2rem;
+     color: black;
+     margin-top: 1rem;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     margin-bottom: 1rem;
+}
+
+#modi-pic {
+     width: 50%;
+     box-shadow: 5px 2px 5px 2px black;
+     border-radius: 50%;
+}
+
+#modi-pic:hover {
+     transform: scale(1.1);
+     transition: all 0.5s ease;
+}
+
+/* ====================| 3 About |======================== */
+.about-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     position: relative;
+     height: 100vh;
+     background-color: white;
+}
+
+.about-content p {
+     font-size: 1.4rem;
+     color: black;
+     margin-top: 1rem;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     margin-bottom: 1rem;
+}
+
+/* ====================| 4 Journey |======================== */
+.journey-content {
+     display: flex;
+     position: relative;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     height: 100vh;
+     background-color: green;
+     color: white;
+}
+
+.journey-content p {
+     font-size: 1.43rem;
+     color: white;
+     margin-top: 1rem;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     margin-bottom: 1rem;
+}
+
+/* ====================| 5 Gallery |======================== */
+.gallery-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     position: relative;
+     height: 100vh;
+     background-color: blue;
+     color: white;
+}
+
+.gallery-content img {
+     width: 25rem;
+     object-fit: cover;
+}
+
+/* ====================| 6 About Developer |======================== */
+.about-developer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     flex-direction: column;
+     height: 100vh;
+     background-color: yellow;
+     color: black;
+}
+
+.about-developer img {
+     width: 25rem;
+     object-fit: cover;
+     box-shadow: 2px 2px 5px 2px black;
+     border-radius: 20%;
+}
+
+.about-developer img:hover {
+     border: 2px solid black;
+}
+
+.about-developer ul li {
+     list-style: none;
+     margin: 1rem;
+     font-size: 1.2rem;
+}

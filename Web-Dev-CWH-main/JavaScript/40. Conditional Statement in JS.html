@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Conditional Statement in JS</title>
+</head>
+
+<body>
+     <div>
+          <ul>
+               <li>llist- 1</li>
+               <li>llist- 2</li>
+               <li>llist- 3</li>
+               <li>llist- 4</li>
+               <li>llist- 5</li>
+               <li>llist- 6</li>
+               <li>llist- 7</li>
+               <li>llist- 8</li>
+               <li>llist- 9</li>
+          </ul>
+     </div>
+     <script>
+          // if-else statement
+          let age = 11;
+          if (age > 18) {
+               console.log("You are eligible for Travel.")
+          }
+          else {
+               console.log("You are not eligible for Travel!")
+          }
+
+          // if-else if-else
+          let age2 = 5;
+          if (age2 > 15) {
+               console.log("You are eligible for drink coke.");
+          } else if (age2 == 5) {
+               console.log("Age is 5");
+          } else if (age == 10) {
+               console.log("Age is 5");
+          } else {
+               console.log("You are eligible for drink bear.");
+          }
+
+          // Switch Case statement
+
+          const cups = 14;
+          switch (cups) {
+               case 4:
+                    console.log("Value of Console is 4");
+                    break;
+               case 5:
+                    console.log("Value of Console is 5");
+                    break;
+               case 42:
+                    console.log("Value of Console is 42");
+                    break;
+               case 44:
+                    console.log("Value of Console is 44");
+                    break;
+               case 47:
+                    console.log("Value of Console is 47");
+                    break;
+
+               default:
+                    console.log("Value of Console is  none of 4, 5, 42, 44, 47");
+                    break;
+          }
+
+          // For Loops
+          for (let i = 0; i < 10; i++) {
+               console.log(i);
+          }
+
+          // For...in Loop
+          var person = { fname: "John", lname: "Doe", age: 25 };
+          var text = "";
+          var x;
+          for (x in person) {
+               text += person[x];
+               console.log(x+" : "+text)
+          }
+
+     </script>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "xpro",
+  "version": "1.0.0",
+  "description": "this is the package while exploring node and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sunny Sahsi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

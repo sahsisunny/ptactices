@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>46. setInterval ans setTimeOut in JS</title>
+</head>
+<body>
+     <div class="container">
+          <h1>setInterval ans setTimeOut in JS</h1>
+          <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum temporibus accusamus modi harum
+               molestiae cupiditate odit vero laboriosam facilis, ad sit voluptates explicabo reprehenderit architecto
+               aspernatur assumenda inventore ipsa corporis voluptatem maxime aut deleniti aliquid. Distinctio omnis
+               illo unde placeat cupiditate tempore nam, aut</p>
+     </div>
+     <script>
+          // setTimeout() is used to run a function after a certain time
+          // setTimeout(function, time in ms)
+
+          let para = document.getElementById('para');
+          setTimeout(function () {
+               para.style.display = 'block';
+               para.style.color = 'red';
+               
+          }, 2000);
+          
+          // setInterval() is used to run a function after a certain time again and again
+          // setInterval(function, time in ms)
+          
+          function displayTime() {
+               let time = new Date();
+               document.getElementById('para').innerText = time;
+          }
+          setInterval(displayTime, 1000);
+     </script>
+
+</body>
+</html>

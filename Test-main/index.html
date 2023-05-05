@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+          body {
+               background-color: rgb(219, 213, 213);
+               color: black;
+          }
+
+          .projects {
+               width: 100%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-wrap: wrap;
+          }
+
+          .projects .project {
+               box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+               width: 30%;
+               height: 100%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               margin: 10px;
+          }
+
+          .projects .project .project-title {
+               font-size: 3rem;
+               font-weight: 700;
+               margin-bottom: 1rem;
+          }
+
+          .projects .project .project-description {
+               font-size: 1.5rem;
+               font-weight: 400;
+               margin-bottom: 1rem;
+          }
+
+          .projects .project .project-link {
+               font-size: 1.5rem;
+               font-weight: 400;
+               margin-bottom: 1rem;
+          }
+
+          /* For mobiles */
+          @media only screen and (max-width: 600px) {
+               .projects .project {
+                    width: 100%;
+               }
+          }
+     </style>
+     <title>All Projects</title>
+</head>
+
+<body>
+
+     <div class="main">
+          <h1>All Projects</h1>
+          <div class="projects">
+               <div class="project">
+                    <h2 class="project-title ">Tribute Page</h2>
+                    <a class="project-link" href="/Files/TributePage/Tribute Page.html">View Project</a>
+               </div>
+               <div class="project">
+                    <h2 class="project-title ">Login Page</h2>
+                    <a class="project-link" href="/Files/LoginPage/index.html">View Project</a>
+               </div>
+               <div class="project">
+                    <h2 class="project-title ">Portfolio</h2>
+                    <a class="project-link" href="/Files/Portfolio/index.html">View Project</a>
+               </div>
+               <div class="project">
+                    <h2 class="project-title ">Home Page</h2>
+                    <a class="project-link" href="/Files/DevHomePage/index.html">View Project</a>
+               </div>
+               <div class="project">
+                    <h2 class="project-title ">Sunny Sahsi</h2>
+                    <a class="project-link" href="/Files/SimpleFolio/index.html">View Project</a>
+               </div>
+          </div>
+</body>
+
+</html>

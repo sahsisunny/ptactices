@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Math object in JS</title>
+</head>
+<body>
+     
+     <div class="container">
+          <h1>Math object in JS</h1>
+          <p id="para"></p>
+     </div>
+     
+     <script>
+          // Math object in JS
+          // Math object is a built-in object in JS
+          // Math object is used to perform mathematical tasks
+          // Math object is a static object
+          // Math object is not a function object
+          
+          // Math object has many properties and methods
+
+          // Print all the properties of Math object
+          console.log(Math);
+
+          // Print the value of PI
+          console.log(Math.PI);
+
+          // Print the value of E
+          console.log(Math.E);
+
+          // Print the value of rounded value of PI
+          console.log(Math.round(Math.PI));
+
+          // Power of 2
+          console.log(Math.pow(2, 2));
+
+          // Square root of 4
+          console.log(Math.sqrt(4));
+
+          // Absolute value of -4
+          console.log(Math.abs(-4));
+
+          // Floor value of 4.5
+          console.log(Math.floor(4.5));      // Round down(floor) the value to the nearest lower integer
+
+          // Ceil value of 4.5
+          console.log(Math.ceil(4.5));       // Round up(ceil) the value to the nearest higher integer
+
+          // Trigonometric functions
+          // Sin of 90 tha value is input in radians
+          console.log(Math.sin(90 * Math.PI / 180));
+
+          // Cos of 0 tha value is input in radians
+          console.log(Math.cos(0 * Math.PI / 180));
+
+          // Min value of 2, 3, 4, 5
+          console.log(Math.min(2, 3, 4, 5));
+
+          // Max value of 2, 3, 4, 5
+          console.log(Math.max(2, 3, 4, 5));
+
+          // Generate random number 
+          console.log(Math.random());        // Generate random number between 0 and 1
+
+          // Generate random number between  a and b formulla
+          // Math.random() * (b - a) + a
+          let a = 10;
+          let b = 20;
+          console.log(Math.random() * (b - a) + a);
+
+          // Print integer value of random number
+          console.log(Math.round(Math.random() * (b - a) + a));
+
+
+     </script>
+
+
+</body>
+</html>

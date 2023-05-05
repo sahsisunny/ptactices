@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Events and Listening to events in JS</title>
+     <style>
+          #btn {
+               background-color: green;
+               color: white;
+               padding: 10px;
+               border: none;
+               border-radius: 5px;
+               cursor: pointer;
+          }
+
+          #btn:hover {
+               background-color: red;
+          }
+
+          h1 {
+               color: green;
+          }
+
+          p {
+               color: blue;
+               font-size: 1.5rem;
+          }
+     </style>
+</head>
+
+<body>
+
+     <div class="container">
+          <h1>Events and Listening to events in JS</h1>
+          <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum temporibus accusamus modi harum
+               molestiae cupiditate odit vero laboriosam facilis, ad sit voluptates explicabo reprehenderit architecto
+               aspernatur assumenda inventore ipsa corporis voluptatem maxime aut deleniti aliquid. Distinctio omnis
+               illo unde placeat cupiditate tempore nam, autem sequi eius modi molestias recusandae est blanditiis
+               eveniet nulla neque, sed sapiente maiores dicta obcaecati impedit doloribus provident sunt commodi.
+               Doloremque numquam cupiditate magni laudantium quo, rerum magnam, facere, debitis iste repudiandae
+               distinctio id! Inventore ratione accusamus, a corporis vero vel expedita temporibus? Architecto quae
+               nihil officiis excepturi accusantium expedita incidunt atque corporis. Enim, aliquid id!</p>
+          <button id="btn">Show/Hide</button>
+     </div>
+     <script>
+          let para = document.getElementById('para');
+          let btn = document.getElementById('btn');
+
+          btn.addEventListener('click', function () {
+               if (para.style.display == 'none') {
+                    para.style.display = 'block';
+                    btn.innerText = 'Hide';
+               } else {
+                    para.style.display = 'none';
+                    btn.innerText = 'Show';
+               }
+          });
+
+          para.addEventListener('mouseover', function () {
+               para.style.color = 'red';
+          });
+
+          para.addEventListener('mouseout', function () {
+               para.style.color = 'blue';
+          });
+
+          para.addEventListener('click', function () {
+               para.style.color = 'green';
+          });
+
+          // javascript to restrict to copy the text
+          para.addEventListener('copy', function () {
+               alert('Copying is not allowed');
+          });
+
+     </script>
+</body>
+
+</html>

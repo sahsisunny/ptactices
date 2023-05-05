@@ -1,0 +1,23 @@
+{
+  "name": "57.-npm--the-node-package-manager",
+  "version": "1.0.0",
+  "description": "this is the best packager ever built by someone",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "sunny",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "~17.0.0",
+    "slugify": "~1.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "~2.0.20"
+  }
+}
+
+
